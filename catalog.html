@@ -57,12 +57,14 @@
       </nav>
     </header>
     <main>
-      <form class="" action="#" method="post">
-        Товар добавлен в корзину!
+      <div class="add-to-card">
+        <p>Товар добавлен в корзину!</p>
         <a href="#">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
-        <button type="button">Закрыть</button>
-      </form>
+        <section>
+          <button type="button">Продолжить покупки</button>
+          <button type="button">Закрыть</button>
+        </section>
+      </div>
       <ul>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
@@ -74,6 +76,11 @@
           <form class="" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <legend>Цена:</legend>
+              <div class="price-range">
+                <div class="ui-price-range"></div>
+                <span tabindex="0" class="min-price-range"></span>
+                <span tabindex="0" class="max-price-range"></span>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
@@ -100,11 +107,11 @@
       </section>
       <section>
         <h2>Сортировка:</h2>
-        <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По функционалу</li>
-        </ul>
+          <button type="button">По цене</button>
+          <button type="button">По типу</button>
+          <button type="button">По функционалу</button>
+          <button type="button">По возврастанию</button>
+          <button type="button">По убыванию</button>
         <h2 class="visually-hidden">Каталог товаров:</h2>
         <ul>
           <li>
