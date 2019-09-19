@@ -280,6 +280,73 @@ label{
 label:active{
   color: #b8b8b8;
 }
+.price-range{
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
+  border-radius: 4px;
+  text-align: center;
+}
+.ui-price-range{
+  display: inline-block;
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+  margin-top: 39px;
+}
+.min-price-value,
+.max-price-value{
+  font-size: 17px;
+  line-height: 38px;
+  text-transform: uppercase;
+  width: 95px;
+  height: 38px;
+  background-color: #f7f3ec;
+  text-align: center;
+  border-radius: 4px;
+}
+.line{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+  background-color: #ffffff;
+}
+.filter h4{
+  width: 202px;
+  height: 38px;
+  background-color: #f7f3ec;
+  line-height: 38px;
+  padding-left: 18px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+.catalog h4{
+  width: 681px;
+  height: 38px;
+  background-color: #f7f3ec;
+  line-height: 38px;
+  padding-left: 19px;
+  border-radius: 4px;
+}
+.catalog button{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #cacaca;
+  border: none;
+  border-bottom: 1px dotted #ee3643;
+  padding: 0;
+  background: none;
+}
+.catalog button:hover{
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
 .filter button{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -342,7 +409,7 @@ label:active{
   line-height: 38px;
   text-align: center;
   background-color: #ee3643;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .pages li{
   font-family: "PT Sans", Arial, sans-serif;
@@ -357,7 +424,7 @@ label:active{
   text-align: center;
   background-color: #ffffff;
   border: 1.0px solid #e5e5e5;
-  border-radius: 3px;
+  border-radius: 4px;
   display: inline-block;
 }
 .pages .next-page{
@@ -367,7 +434,7 @@ label:active{
   text-align: center;
   background-color: #ffffff;
   border: 1.0px solid #e5e5e5;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .pages a:hover{
   border: 1.0px solid #bdc6ca;
