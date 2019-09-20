@@ -222,6 +222,89 @@ button{
 .header-navigation a:active{
   color: #a8abaf;
 }
+.elements-catalog-list h2{
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.elements-catalog-list a{
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  border-radius: 4px;
+}
+.elements-catalog-list a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.elements-catalog-list a:active{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.elements-catalog-list{
+  width: 300px;
+  height: 123px;
+}
+.element-1{
+  background-color: #ffbf47;
+}
+.element-2{
+  background-color: #3bbce3;
+}
+.element-3{
+  background-color: #dc91d8;
+}
+.element-4 .first-slider{
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 266px;
+}
+.element-4 .second-slider{
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 266px;
+}
+.element-4 h2{
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.element-4 p{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.element-4 .catalog-btn{
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  background-color: #ee3643;
+  width: 195px;
+  height: 38px;
+  text-align: center;
+  border-radius: 4px;
+}
+.element-5{
+  background-color: #8ed78f;
+}
+.element-6{
+  background-color: #ffc047;
+}
 .breadcrumbs{
   list-style: none;
 }
@@ -323,7 +406,31 @@ label:active{
   margin-left: 10px;
   border-radius: 4px;
 }
-.catalog h4{
+.section-header{
+  width: 940px;
+  height: 89px;
+  background-color: #f9f5f0;
+}
+.section-header h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+.section-header .section-header-btn{
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  background-color: #ee3643;
+  width: 253px;
+  height: 38px;
+  text-align: center;
+  border-radius: 4px;
+}
+.catalog .sorting{
   width: 681px;
   height: 38px;
   background-color: #f7f3ec;
@@ -397,6 +504,18 @@ label:active{
   width: 141px;
   height: 38px;
 }
+.popular-manufaturers ul{
+    list-style: none;
+}
+.popular-manufaturers li{
+  width: 220px;
+  height: 145px;
+  background-color: #ffffff;
+  border: 1.0px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .pages{
   list-style: none;
 }
@@ -416,7 +535,8 @@ label:active{
   font-size: 13px;
   text-transform: uppercase;
 }
-.pages a{
+.pages a,
+.btn-show{
   color: #000000;
   width: 38px;
   height: 38px;
@@ -427,6 +547,10 @@ label:active{
   border-radius: 4px;
   display: inline-block;
 }
+.btn-show{
+  width: 140px;
+  height: 38px;
+}
 .pages .next-page{
   width: 140px;
   height: 38px;
@@ -436,11 +560,56 @@ label:active{
   border: 1.0px solid #e5e5e5;
   border-radius: 4px;
 }
-.pages a:hover{
+.pages a:hover,
+.btn-show:hover{
   border: 1.0px solid #bdc6ca;
 }
-.pages a:active{
+.pages a:active,
+.btn-show:active{
   border: 1.0px solid #ee3643;
+}
+.services{
+  width: 1926px;
+  height: 522px;
+}
+.services ul{
+  list-style: none;
+}
+.services button{
+  font-size: 21px;
+  line-height: 62px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 240px;
+  height: 62px;
+  background-color: #32425c;
+  text-align: left;
+  border:none
+}
+.services button:hover{
+background-color: #293449;
+}
+.services h3{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.services .guarantee{
+  font-family: "GillSans", "Cuprum", Arial, sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.services p{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
 }
 .about-company p{
   font-family: "PT Sans", Arial, sans-serif;
@@ -465,11 +634,13 @@ label:active{
   text-align: center;
 }
 .about-company a:hover,
-.contacts button:hover{
+.contacts button:hover,
+.catalog-btn:hover{
   background-color: #ca2c37;
 }
 .about-company a:active,
-.contacts button:active{
+.contacts button:active,
+.catalog-btn:active{
   background-color: #ba2732;
 }
 .contacts p{
