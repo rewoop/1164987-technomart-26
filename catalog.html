@@ -9,30 +9,34 @@
   </head>
   <body>
     <header>
-      <div class="main-bar">
-      <div class="logo-header">
-        <a href="index.html">
-        <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
-      </div>
-      <ul>
-        <li>
-      <form class="" action="https://echo.htmlacademy.ru" method="get">
-        <label for="search" class="visually-hidden">Поиск:</label>
-        <input id="search" type="search" name="search" value="" placeholder="Поиск:">
-      </form>
-        </li>
-        <li>
-          <a href="#" class="favorites">Закладки: 0</a>
-        </li>
-        <li>
-          <a href="#" class="basket-catalog">Корзина: 10</a>
-        </li>
-        <li >
+      <div class="darkblue-background">
+        <div class="main-bar container">
+          <div class="logo-header">
+            <a href="index.html">
+            <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+            </a>
+          </div>
+          <ul>
+            <li>
+          <form class="" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search" class="visually-hidden">Поиск:</label>
+            <input id="search" type="search" name="search" value="" placeholder="Поиск:">
+          </form>
+          </li>
+          <li>
+            <a href="#" class="favorites">Закладки: 0</a>
+          </li>
+          <li>
+            <a href="#" class="basket-catalog">Корзина: 10</a>
+          </li>
+          <li>
           <a href="#" class="checkout">Оформить заказ</a>
-        </li>
-      </ul>
+          </li>
+        </ul>
       </div>
+    </div>
+    <div class="container header-panel">
+    <div class="first-header-panel">
       <p class="title"> Интернет-магазин <br>
         строительных материалов <br>
         и инструментов для ремонта
@@ -42,16 +46,19 @@
         <span>+7 (812) 555-05-55</span>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </section>
-      <section>
+      <section class="user-panel">
         <h2 class="visually-hidden">Данные пользователя</h2>
         <ul class="user">
           <li><a href="#" class="username">Равшан Джамшутович</a></li>
-          <li><a href="#" class="user-orders">Мои заказы</a></li>
-          <li><img src="img/shape-1.svg" alt=""></li>
-          <li><a href="#" class="user-personal-area">Личный кабинет</a></li>
+          <div class="orders-lc">
+            <li><a href="#" class="user-orders">Мои заказы</a></li>
+            <li><img src="img/shape-1.svg" alt=""></li>
+            <li><a href="#" class="user-personal-area">Личный кабинет</a></li>
+          </div>
         </ul>
       </section>
-      <nav class="header-navigation">
+    </div>
+      <nav class="header-navigation container">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -62,6 +69,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
       <div class="visually-hidden">
@@ -240,43 +248,49 @@
       </section>
     </main>
     <footer>
-      <section class="first-footer">
-        <a href="index.html" class="logo-footer">
-        <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
-      <nav class="site-navigation">
-        <ul>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-      +7 (812) 555-05-55</p>
-      <nav class="catalog-navigation">
-        <ul>
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
-      </nav>
-      </section>
-      <section class="second-footer">
-      <p>© 2010–2019 Компания «Техномарт» <br>
-        Все права защищены</p>
-      <div>
-        <a href="https://vk.com/rewoop"><img src="img/vk.svg" alt="Вкотакте"></a>
-        <a href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a>
-        <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+      <div class="first-footer-background">
+        <section class="container first-footer-section">
+        <div class="first-footer">
+          <a href="index.html" class="logo-footer">
+          <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
+          </a>
+        <nav class="site-navigation">
+          <ul>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        </div>
+        <nav class="catalog-navigation">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+          +7 (812) 555-05-55</p>
+          <ul>
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </nav>
+        </section>
       </div>
-      <p>Обратная связь: <br>
-        <a href="#">mail@htmlacademy.ru</a></p>
-      <p>Разработано — <br>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-      </section>
+      <div class="second-footer-background">
+        <section class="container second-footer">
+        <p>© 2010–2019 Компания «Техномарт» <br>
+          Все права защищены</p>
+        <div>
+          <a href="https://vk.com/rewoop"><img src="img/vk.svg" alt="Вкотакте"></a>
+          <a href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a>
+          <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+        </div>
+        <p>Обратная связь: <br>
+          <a href="#">mail@htmlacademy.ru</a></p>
+        <p>Разработано — <br>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

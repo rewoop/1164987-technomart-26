@@ -19,6 +19,19 @@ body {
   width: 940px;
   margin: 0 auto;
 }
+.m-top{
+  margin-top: 60px;
+}
+.m-bottom{
+  margin-bottom: 60px;
+}
+.mp-null{
+  margin: 0;
+  padding: 0;
+}
+.m-top-null{
+  margin-top: 0;
+}
 a{
   text-decoration: none;
 }
@@ -32,6 +45,10 @@ button{
 .darkblue-background{
   height: 42px;
   background-color: #293449;
+  width: auto;
+}
+.lightblue-background{
+  background-color: #f2f4f8;
   width: auto;
 }
 .main-bar{
@@ -54,9 +71,11 @@ button{
   background-color: #ee3643;
   width: 220px;
   height: 47px;
-  line-height: 47px;
   text-align: center;
-  display: inline-block;
+}
+.logo-header a{
+  line-height: 47px;
+  display: block;
 }
 .logo-header:hover,
 .logo-footer:hover{
@@ -134,24 +153,38 @@ button{
 }
 .header-panel{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 46px;
 }
 .title{
   color: #ee3643;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
-  margin-left: 53px;
-  margin-top: 49px;
+  margin: 0;
+  padding: 0;
+}
+.first-header-panel{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+.first-header-panel .title{
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 .contact-info-header{
   border: 3px solid #ffffff;
   width: 270px;
-  height: 45px;
-  line-height: 45px;
+  height: 39px;
+  line-height: 39px;
   text-align: center;
+  display: block;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 .contact-info-header span{
   font-size: 21px;
@@ -162,11 +195,17 @@ button{
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  margin: 0;
+  margin-top: 10px;
 }
 .user-panel{
   list-style: none;
   margin: 0;
   display: flex;
+  padding: 0;
+}
+.sign-in{
+  margin-right: 10px;
 }
 .user-panel button{
   font-size: 21px;
@@ -187,6 +226,14 @@ button{
 }
 .user{
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.orders-lc{
+  display: flex;
+}
+.orders-lc li{
+  padding-left: 17px;
 }
 .username{
   font-size: 21px;
@@ -227,7 +274,7 @@ button{
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .header-navigation a{
   color: #ffffff;
@@ -245,11 +292,22 @@ button{
 .header-navigation a:active{
   color: #a8abaf;
 }
-.elements-catalog-1{
+.container-elements-first-line{
   display: flex;
-  margin-top: 60px;
   justify-content: space-between;
-  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.container-elements-second-line{
+  display: flex;
+  justify-content: space-between;
+}
+.big-element{
+  width: 620px;
+}
+.small-elements{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .elements-catalog-list h2{
   font-size: 24px;
@@ -510,6 +568,9 @@ label:active{
   padding: 10px 0;
   justify-content: space-between;
 }
+.catalog ul li span{
+  padding: 0 10px;
+}
 .catalog li{
   width: 220px;
   height: 318px;
@@ -519,14 +580,12 @@ label:active{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
 }
 .catalog li h3,
 .catalog li p{
   margin: 0;
-}
-.catalog li h3{
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 .catalog a{
   color: #000000;
@@ -557,7 +616,6 @@ label:active{
   background-color: #ee3643;
   width: 141px;
   height: 38px;
-  margin-bottom: 21px;
   border-radius: 4px;
 }
 .popular-manufaturers ul{
@@ -635,19 +693,37 @@ label:active{
 .btn-show:active{
   border: 1.0px solid #ee3643;
 }
+.services-sliders{
+  display: flex;
+  margin-top: 75px;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 100px;
+}
 .services ul{
   list-style: none;
   padding: 0;
-}
-.services ul li{
   display: flex;
-  justify-content: space-between;
+  margin-left: 50px;
+  padding-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .services ul li button,
-.services ul li h3,
-.services ul li p,
 .services ul li img{
   margin: 0;
+}
+.services ul li h3{
+  margin-top: 0;
+}
+.services h2{
+  margin-top: 0;
+  padding-top: 68px;
+}
+.services .slider-btn{
+  display: flex;
+  flex-direction: column;
 }
 .services button{
   font-size: 21px;
@@ -661,12 +737,16 @@ label:active{
   border:none
 }
 .services button:hover{
-background-color: #293449;
+  background-color: #293449;
+}
+.services button:focus{
+  background-color: #ffffff;
+  color: #32425c;
 }
 .services h3{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 24px;
   color: #32425c;
   font-weight: 400;
   text-transform: uppercase;
@@ -684,15 +764,31 @@ background-color: #293449;
   line-height: 24px;
   color: #000000;
   font-weight: 400;
+  margin-bottom: 0;
 }
 .info{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 86px;
+}
+.about-company{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contacts img{
+  margin: 38px 0;
 }
 .about-company p{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
 }
 .about-company ul{
   font-size: 18px;
@@ -729,7 +825,7 @@ background-color: #293449;
 }
 .contacts button{
   background-color: #ee3643;
-  width: 220px;
+  width: 300px;
   height: 38px;
   border: none;
   border-radius: 5px;
@@ -737,6 +833,7 @@ background-color: #293449;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: auto;
 }
 .post-scriptum{
   background-color: #f2f6f8;
@@ -748,8 +845,20 @@ background-color: #293449;
   font-size: 13px;
   line-height: 24px;
 }
-.first-footer{
+.first-footer-background{
+  height: 193px;
   background-color: #32425c;
+  width: auto;
+}
+.second-footer-background{
+  height: 107px;
+  background-color: #293449;
+  width: auto;
+}
+.first-footer{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
 }
 .logo-footer{
   background-color: #ee3643;
@@ -759,31 +868,68 @@ background-color: #293449;
   text-align: center;
   display: inline-block;
 }
-.first-footer ul{
+.first-footer-section ul{
   list-style: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
 }
-.site-navigation a{
+.site-navigation ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-top: 42px;
+}
+.site-navigation ul li{
+  display: flex;
+  padding-left: 60px;
+}
+.site-navigation ul li a{
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
+  display: block;
 }
-.first-footer p{
+.first-footer-section p{
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
+  margin: 0;
+}
+.catalog-navigation{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.catalog-navigation ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.catalog-navigation ul li{
+  display: flex;
+  padding-left: 60px;
 }
 .catalog-navigation a{
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
+  display: block;
 }
 .second-footer{
-  background-color: #293449;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.copyright{
+  width: 300px;
+}
+.feedback-developer{
+  display: flex;
+  justify-content: flex-end;
+}
+.feedback-developer p{
+  padding-left: 53px;
 }
 .second-footer p{
   font-size: 16px;
