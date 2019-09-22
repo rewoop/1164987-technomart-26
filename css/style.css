@@ -15,23 +15,37 @@ body {
 
   background-color: #ffffff;
 }
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
 a{
   text-decoration: none;
 }
 header{
-  background-color: #f3f7f9;
+  width: auto;
 }
 button{
   font-family: "Cuprum", Arial, sans-serif;
+  cursor: pointer;
+}
+.darkblue-background{
+  height: 42px;
+  background-color: #293449;
+  width: auto;
 }
 .main-bar{
-  background-color: #293449;
+  background: transparent;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+  display: flex;
 }
 .main-bar ul{
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .main-bar a{
   color: #ffffff;
@@ -118,11 +132,19 @@ button{
   background-color: #518534;
   color: #babbbd;
 }
+.header-panel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .title{
   color: #ee3643;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
+  margin-left: 53px;
+  margin-top: 49px;
 }
 .contact-info-header{
   border: 3px solid #ffffff;
@@ -143,6 +165,8 @@ button{
 }
 .user-panel{
   list-style: none;
+  margin: 0;
+  display: flex;
 }
 .user-panel button{
   font-size: 21px;
@@ -193,25 +217,24 @@ button{
   color: #c5cad0;
 }
 .header-navigation{
-  width: 940px;
   height: 60px;
   background-color: #32425c;
+  margin-top: 44px;
+  margin-bottom: 60px;
 }
 .header-navigation ul{
   list-style: none;
-}
-.header-navigation li{
-  width: 110px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: inline-block;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 .header-navigation a{
   color: #ffffff;
   font-size: 17px;
+  padding: 0 30px;
   line-height: 60px;
-  display: inline-block;
+  display: flex;
 }
 .header-navigation li:hover{
   background-color: #293449;
@@ -222,12 +245,20 @@ button{
 .header-navigation a:active{
   color: #a8abaf;
 }
+.elements-catalog-1{
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .elements-catalog-list h2{
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   font-weight: 700;
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
 }
 .elements-catalog-list a{
   font-size: 14px;
@@ -410,12 +441,17 @@ label:active{
   width: 940px;
   height: 89px;
   background-color: #f9f5f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .section-header h2{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  margin: 0;
+  padding-left: 30px;
 }
 .section-header .section-header-btn{
   font-size: 14px;
@@ -429,6 +465,7 @@ label:active{
   height: 38px;
   text-align: center;
   border-radius: 4px;
+  margin-right: 24px;
 }
 .catalog .sorting{
   width: 681px;
@@ -468,12 +505,28 @@ label:active{
 }
 .catalog ul{
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+  justify-content: space-between;
 }
 .catalog li{
   width: 220px;
   height: 318px;
   background-color: #ffffff;
   border: 1.0px solid #e5e5e5;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catalog li h3,
+.catalog li p{
+  margin: 0;
+}
+.catalog li h3{
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .catalog a{
   color: #000000;
@@ -490,6 +543,7 @@ label:active{
   color: #999999;
   text-align: center;
   display: block;
+  margin-bottom: 12px;
 }
 .catalog .current-price{
   font-family: "PT Sans", Arial, sans-serif;
@@ -503,18 +557,31 @@ label:active{
   background-color: #ee3643;
   width: 141px;
   height: 38px;
+  margin-bottom: 21px;
+  border-radius: 4px;
 }
 .popular-manufaturers ul{
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .popular-manufaturers li{
+  background-color: #ffffff;
+  margin: 10px 0;
+}
+.popular-manufaturers li a{
   width: 220px;
   height: 145px;
-  background-color: #ffffff;
   border: 1.0px solid #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.popular-manufaturers li a img{
+  display: inline-block;
 }
 .pages{
   list-style: none;
@@ -568,12 +635,19 @@ label:active{
 .btn-show:active{
   border: 1.0px solid #ee3643;
 }
-.services{
-  width: 1926px;
-  height: 522px;
-}
 .services ul{
   list-style: none;
+  padding: 0;
+}
+.services ul li{
+  display: flex;
+  justify-content: space-between;
+}
+.services ul li button,
+.services ul li h3,
+.services ul li p,
+.services ul li img{
+  margin: 0;
 }
 .services button{
   font-size: 21px;
@@ -611,6 +685,10 @@ background-color: #293449;
   color: #000000;
   font-weight: 400;
 }
+.info{
+  display: flex;
+  justify-content: space-between;
+}
 .about-company p{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -647,6 +725,7 @@ background-color: #293449;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
 }
 .contacts button{
   background-color: #ee3643;
