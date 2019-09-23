@@ -154,7 +154,6 @@ button{
 .header-panel{
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 46px;
 }
@@ -341,14 +340,38 @@ button{
   width: 300px;
   height: 123px;
 }
+.element-1 h2,
+.element-2 h2,
+.element-3 h2,
+.element-5 h2,
+.element-6 h2{
+   padding-bottom: 15px;
+   padding-left: 23px;
+}
+.element-1 a,
+.element-2 a,
+.element-3 a,
+.element-5 a,
+.element-6 a{
+   margin-left: 25px;
+}
 .element-1{
   background-color: #ffbf47;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .element-2{
   background-color: #3bbce3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .element-3{
   background-color: #dc91d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .element-4 .first-slider{
   background-image: url("../img/slider-1.jpg");
@@ -390,9 +413,15 @@ button{
 }
 .element-5{
   background-color: #8ed78f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .element-6{
   background-color: #ffc047;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .breadcrumbs{
   list-style: none;
