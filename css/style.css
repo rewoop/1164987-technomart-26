@@ -32,6 +32,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.m-null{
+  margin: 0;
+}
 .m-top-null{
   margin-top: 0;
 }
@@ -236,9 +239,11 @@ button{
 }
 .orders-lc{
   display: flex;
-}
-.orders-lc li{
-  padding-left: 17px;
+  width: 210px;
+  justify-content: space-between;
+  padding-left: 18px;
+  padding-top: 10px;
+  align-items: flex-end;
 }
 .username{
   font-size: 21px;
@@ -452,6 +457,8 @@ button{
 }
 .breadcrumbs{
   list-style: none;
+  display: flex;
+  margin: 24px 0;
 }
 .breadcrumbs li{
   font-family: "PT Sans", Arial, sans-serif;
@@ -459,6 +466,7 @@ button{
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  padding-right: 18px;
 }
 h1{
   font-size: 30px;
@@ -466,7 +474,6 @@ h1{
   text-transform: uppercase;
   color: #32425c;
   background-color: #f2f6f8;
-  width: 940px;
   height: 89px;
   display: block;
   text-align: left;
@@ -508,6 +515,15 @@ label{
 label:active{
   color: #b8b8b8;
 }
+.price-filter{
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin-bottom: 13px;
+}
+.second-legend{
+  padding-top: 13px;
+}
 .price-range{
   width: 220px;
   height: 80px;
@@ -515,12 +531,60 @@ label:active{
   border-radius: 4px;
   text-align: center;
 }
+.value-price-range{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 9px;
+}
 .ui-price-range{
   display: inline-block;
   width: 180px;
   height: 2px;
   background-color: #d7dcde;
   margin-top: 39px;
+}
+.ui-selected-range{
+  background-color: #00ca74;
+  width: 120px;
+  height: 2px;
+  position: relative;
+  left: 40px;
+  bottom: 10px;
+}
+.min-price-range,
+.max-price-range{
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 10px;
+  position: relative;
+}
+.min-price-range{
+  left: 20px;
+  bottom: 20px;
+}
+.max-price-range{
+  left: 160px;
+  bottom: 41px;
+}
+.dott-min-price-range,
+.dott-max-price-range{
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ababab;
+  display: block;
+  position: relative;
+}
+.dott-min-price-range{
+  bottom: 52px;
+  left: 28px;
+}
+.dott-max-price-range{
+  bottom: 57px;
+  left: 168px;
 }
 .min-price-value,
 .max-price-value{
@@ -548,8 +612,11 @@ label:active{
   background-color: #f7f3ec;
   line-height: 38px;
   padding-left: 18px;
-  margin-left: 10px;
   border-radius: 4px;
+  margin: 20px 20px 10px 0;
+}
+.filter form legend{
+  padding-bottom: 13px;
 }
 .section-header{
   width: 940px;
@@ -894,11 +961,6 @@ label:active{
   text-transform: uppercase;
   color: #ffffff;
   margin-top: auto;
-}
-.post-scriptum{
-  background-color: #f2f6f8;
-  width: 1286px;
-  height: 261px;
 }
 .post-scriptum p{
   font-family: "PT Sans", Arial, sans-serif;
