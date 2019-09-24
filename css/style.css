@@ -7,13 +7,16 @@ body {
   margin-inline-end: 0;
   padding-inline-start: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
 
   background-color: #ffffff;
+}
+.cuprum-family{
+  font-family: "Cuprum", Arial, sans-serif;
 }
 .container{
   width: 940px;
@@ -377,6 +380,20 @@ button{
   flex-direction: column;
   justify-content: center;
 }
+.element-4{
+  display: flex;
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
+}
+.slider-btns{
+  display: flex;
+  padding-top: 114px;
+  padding-right: 20px;
+  padding-left: 25px;
+}
+.slider-btns .left-btn{
+  margin: 0 auto;
+}
 .element-4 .first-slider{
   background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
@@ -384,8 +401,8 @@ button{
   height: 266px;
 }
 .element-4 .second-slider{
-  background-image: url("../img/slider-2.jpg");
-  background-repeat: no-repeat;
+  /* background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat; */
   width: 620px;
   height: 266px;
 }
@@ -395,12 +412,18 @@ button{
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  position: relative;
+  top: 27px;
+  left: 24px;
 }
 .element-4 p{
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
   font-weight: 400;
+  position: relative;
+  top: 30px;
+  left: 25px;
 }
 .element-4 .catalog-btn{
   font-size: 14px;
