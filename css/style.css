@@ -519,9 +519,16 @@ label:active{
   display: flex;
   flex-direction: column;
   width: 220px;
-  margin-bottom: 13px;
+  margin-bottom: 24px;
 }
-.second-legend{
+.section-separator{
+  display: block;
+  width: 220px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+.second-legend,
+.third-legend{
   padding-top: 13px;
 }
 .price-range{
@@ -588,6 +595,7 @@ label:active{
 }
 .min-price-value,
 .max-price-value{
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 38px;
   text-transform: uppercase;
@@ -633,6 +641,20 @@ label:active{
   color: #32425c;
   margin: 0;
   padding-left: 30px;
+}
+.manufactures{
+  display: flex;
+}
+.manufactures-input{
+  display: none;
+}
+.manufactures-label{
+  display: flex;
+  flex-direction: column;
+}
+.manufactures-label label::before{
+content: "";
+display: inline-block;
 }
 .section-header .section-header-btn{
   font-size: 14px;
@@ -936,12 +958,14 @@ label:active{
 }
 .about-company a:hover,
 .contacts button:hover,
-.catalog-btn:hover{
+.catalog-btn:hover,
+.section-header-btn:hover{
   background-color: #ca2c37;
 }
 .about-company a:active,
 .contacts button:active,
-.catalog-btn:active{
+.catalog-btn:active,
+.section-header-btn:active{
   background-color: #ba2732;
 }
 .contacts p{
@@ -990,6 +1014,10 @@ label:active{
   text-align: center;
   display: inline-block;
   border-bottom: 5px solid #b52933;
+}
+.logo-footer a{
+  line-height: 68px;
+  display: block;
 }
 .first-footer-section ul{
   list-style: none;
