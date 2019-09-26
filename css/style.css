@@ -666,7 +666,7 @@ label:active{
   display: flex;
   flex-direction: column;
 }
-.manufacturers input{
+.manufacturers .check-input{
   display: none;
 }
 .section-header .section-header-btn{
