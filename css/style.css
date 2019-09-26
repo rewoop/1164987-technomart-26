@@ -658,38 +658,17 @@ label:active{
   margin: 0;
   padding-left: 30px;
 }
-.manufactures{
-  display: flex;
-  padding-bottom: 20px;
-}
-.manufactures-input{
-  display: none;
-}
-.manufactures-label{
-  display: flex;
-  flex-direction: column;
-}
 .filter form fieldset label{
   line-height: 15px;
   cursor: pointer;
 }
-/* .manufactures-label label::before{
-content: "";
-display: inline-block;
-width: 23px;
-height: 23px;
-background-image: url("../img/checkbox-off-light.png");
-vertical-align: middle;
+.manufacturers{
+  display: flex;
+  flex-direction: column;
 }
-.manufactures-label label:hover::before{
-content: "";
-background-image: url("../img/checkbox-off-dark.png");
+.manufacturers input{
+  display: none;
 }
-.manufactures-input input:checked + label::before{
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-on-light.png");
-} */
 .section-header .section-header-btn{
   font-size: 14px;
   line-height: 38px;
