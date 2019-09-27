@@ -666,8 +666,42 @@ label:active{
   display: flex;
   flex-direction: column;
 }
+.manufacturers .check{
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-top: 5px;
+}
+.manufacturers .check-box{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-light.png");
+  margin-left: -35px;
+  margin-top: -5px;
+}
 .manufacturers .check-input{
-  display: none;
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.manufacturers .check-input:checked + .check-box{
+  width: 27px;
+  background-image: url("../img/checkbox-on-light.png");
+}
+.manufacturers .check:hover .check-box{
+  background-image: url("../img/checkbox-off-dark.png");
+}
+.manufacturers .check:hover .check-input:checked + .check-box{
+  width: 27px;
+  background-image: url("../img/checkbox-on-dark.png");
+}
+.manufacturers .check-input:disabled + .check-box,
+.manufacturers .check-input:checked:disabled + .check-box{
+  opacity: 0.3;
+}
+.manufacturers .check-input:disabled {
+  opacity: 0.1;
 }
 .section-header .section-header-btn{
   font-size: 14px;
