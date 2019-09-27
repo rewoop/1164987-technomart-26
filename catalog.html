@@ -120,37 +120,45 @@
                     <label class="check">
                       <input class="check-input" type="checkbox" name="bosch" checked>
                       <span class="check-box"></span>
-                      BOSCH
+                      <span class="label-name">BOSCH</span>
                     </label>
                     <label class="check">
                       <input class="check-input" type="checkbox" name="interskol">
                       <span class="check-box"></span>
-                      Интерскол
+                      <span class="label-name">Интерскол</span>
                     </label>
                     <label class="check">
                       <input class="check-input" type="checkbox" name="makita" checked>
                       <span class="check-box"></span>
-                      Makita
+                      <span class="label-name">Makita</span>
                     </label>
                     <label class="check">
                       <input class="check-input" type="checkbox" name="dewalt">
                       <span class="check-box"></span>
-                      Dewalt
+                      <span class="label-name">Dewalt</span>
                     </label>
                     <label class="check">
-                      <input class="check-input" type="checkbox" name="hitachi" disabled>
+                      <input class="check-input" type="checkbox" name="hitachi">
                       <span class="check-box"></span>
-                      Hitachi
+                      <span class="label-name">Hitachi</span>
                     </label>
                   </div>
                 </fieldset>
                 <span class="section-separator"></span>
                 <fieldset class="mp-null">
                   <legend class="third-legend">Питание:</legend>
-                  <input id="rechargeable" type="radio" name="power" value="rechargeable" checked>
-                  <label for="rechargeable">Аккумуляторные</label>
-                  <input id="network" type="radio" name="power" value="network">
-                  <label for="network">Сетевые</label>
+                  <div class="power-choose">
+                    <label class="radio">
+                      <input type="radio" name="power" value="rechargeable" class="radio-input" checked>
+                      <span class="radio-box"></span>
+                      <span class="label-name">Аккумуляторные</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="power" value="network" class="radio-input">
+                      <span class="radio-box"></span>
+                      <span class="label-name">Сетевые</span>
+                    </label>
+                  </div>
                 </fieldset>
                 <button type="submit" class="btn-show">Показать</button>
               </form>
