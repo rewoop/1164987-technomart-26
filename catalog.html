@@ -21,15 +21,18 @@
           <form class="" action="https://echo.htmlacademy.ru" method="get">
             <label for="search" class="visually-hidden">Поиск:</label>
             <input id="search" type="search" name="search" value="" placeholder="Поиск:">
+            <span class="icon-search icons-header icon-cursor-search"></span>
           </form>
             </li>
             <li>
+              <span class="favorites-icon icons-header icon-cursor-pointer"></span>
               <a href="#" class="favorites">Закладки: 0</a>
             </li>
             <li>
-              <a href="#" class="basket">Корзина: 0</a>
+              <span class="basket-icon icons-header icon-cursor-pointer"></span>
+              <a href="#" class="basket-catalog">Корзина: 10</a>
             </li>
-            <li >
+            <li>
               <a href="#" class="checkout">Оформить заказ</a>
             </li>
           </ul>
@@ -41,33 +44,49 @@
             строительных материалов <br>
             и инструментов для ремонта
           </p>
-          <section class="contact-info-header">
+          <section class="contact-info-header contact-info-header-catalog">
             <h2 class="visually-hidden">Контактный телефон:</h2>
-            <span>+7 (812) 555-05-55</span>
+            <svg class="icon-phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+              <g id="UrwUhy_1_">
+              <g>
+              <path fill="#B7BFC8" d="M15.572,18.985c-0.312,0-0.629,0-0.941,0c-4.129-0.488-7.157-2.408-9.359-4.864
+                c-2.21-2.461-3.954-5.629-4.294-9.893c0-0.382,0-0.762,0-1.144C1.056,2.31,1.437,1.78,1.876,1.327
+                C2.425,0.766,3.25,0.044,4.002,0.019c0.554-0.018,1.5,0.38,1.879,0.899C6.21,1.364,6.385,2.257,6.537,2.921
+                c0.154,0.671,0.505,1.643,0.408,2.289C6.797,6.217,5.458,6.644,5.066,7.376c1.307,3.135,3.443,5.439,6.293,7.031
+                c0.715-0.392,1.346-1.572,2.332-1.595c0.359-0.009,0.818,0.178,1.184,0.286c0.402,0.121,0.75,0.275,1.104,0.408
+                c0.596,0.224,1.648,0.521,2.004,1.021c0.365,0.513,0.57,1.356,0.49,1.879C18.309,17.447,16.594,18.603,15.572,18.985z"/></g></g></svg>
+              <span>+7 (812) 555-05-55</span>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </section>
       <section class="user-panel">
         <h2 class="visually-hidden">Данные пользователя</h2>
         <ul class="user">
-          <li><a href="#" class="username">Равшан Джамшутович</a></li>
+          <li class="username-block">
+            <span class="icon-user icon-cursor-pointer"></span>
+            <span class="icon-logout icon-cursor-pointer"></span>
+            <a href="#" class="username">Равшан Джамшутович</a>
+          </li>
           <div class="orders-lc">
             <li><a href="#" class="user-orders">Мои заказы</a></li>
             <li><img src="img/shape-1.svg" alt=""></li>
             <li><a href="#" class="user-personal-area">Личный кабинет</a></li>
           </div>
         </ul>
+        </div>
       </section>
-        <nav class="header-navigation container m-top-34">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+      <div class="header-nav-div">
+          <nav class="header-navigation container m-top-34">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -211,6 +230,7 @@
                 <p class="current-price">25500 Р.</p>
               </li>
               <li>
+                <span class="new-catalog-item"></span>
                 <a href="catalog-item.html"><img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
                 <h3>
                   <a href="catalog-item.html">
@@ -218,9 +238,45 @@
                   <span>BFG 2000</span>
                   </a>
                 </h3>
+                <p><del><br></del></p>
                 <p class="current-price">12500 Р.</p>
               </li>
               <li>
+                <a href="catalog-item.html"><img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
+                <h3>
+                  <a href="catalog-item.html">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 3000</span>
+                  </a>
+                </h3>
+                <p><del>22500 Р.</del> </p>
+                <p class="current-price">15500 Р.</p>
+              </li>
+              <li>
+                <span class="new-catalog-item"></span>
+                <a href="catalog-item.html"><img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000"></a>
+                <h3>
+                  <a href="catalog-item.html">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span>
+                  </a>
+                </h3>
+                <p><del>30500 Р.</del> </p>
+                <p class="current-price">25500 Р.</p>
+              </li>
+              <li>
+                <a href="catalog-item.html"><img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
+                <h3>
+                  <a href="catalog-item.html">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 2000</span>
+                  </a>
+                </h3>
+                <p><del><br></del></p>
+                <p class="current-price">12500 Р.</p>
+              </li>
+              <li>
+                <span class="new-catalog-item"></span>
                 <a href="catalog-item.html"><img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
                 <h3>
                   <a href="catalog-item.html">
@@ -250,38 +306,7 @@
                   <span>BFG 2000</span>
                   </a>
                 </h3>
-                <p class="current-price">12500 Р.</p>
-              </li>
-              <li>
-                <a href="catalog-item.html"><img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
-                <h3>
-                  <a href="catalog-item.html">
-                  <span>Перфоратор BOSCH</span>
-                  <span>BFG 3000</span>
-                  </a>
-                </h3>
-                <p><del>22500 Р.</del> </p>
-                <p class="current-price">15500 Р.</p>
-              </li>
-              <li>
-                <a href="catalog-item.html"><img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000"></a>
-                <h3>
-                  <a href="catalog-item.html">
-                  <span>Перфоратор BOSCH</span>
-                  <span>BFG 6000</span>
-                  </a>
-                </h3>
-                <p><del>30500 Р.</del> </p>
-                <p class="current-price">25500 Р.</p>
-              </li>
-              <li>
-                <a href="catalog-item.html"><img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
-                <h3>
-                  <a href="catalog-item.html">
-                  <span>Перфоратор BOSCH</span>
-                  <span>BFG 2000</span>
-                  </a>
-                </h3>
+                <p><del><br></del></p>
                 <p class="current-price">12500 Р.</p>
               </li>
             </ul>

@@ -25,11 +25,17 @@ body {
 .m-top-60{
   margin-top: 60px;
 }
+.m-top-59{
+  margin-top: 59px;
+}
 body header .m-top-34{
   margin-top: 34px;
 }
 .m-bottom-60{
   margin-bottom: 60px;
+}
+.m-bottom-53{
+  margin-bottom: 53px;
 }
 .mp-null{
   margin: 0;
@@ -49,6 +55,15 @@ body header .m-top-34{
 }
 .m-top-10{
   margin-top: 10px;
+}
+.icon-cursor-pointer{
+  cursor: pointer;
+}
+.icon-cursor-search{
+  cursor: text;
+}
+.dblock{
+  display: inline-block;
 }
 a{
   text-decoration: none;
@@ -75,6 +90,32 @@ button{
   line-height: 18px;
   color: #ffffff;
   display: flex;
+}
+.icons-header{
+  opacity: 0.3;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.main-bar .icon-search{
+  width: 17px;
+  height: 17px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='17px' height='17px' viewBox='0 0 17 17' enable-background='new 0 0 17 17' xml:space='preserve'%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='Layer_2'%3E%3Cpath fill='%23ffffff' d='M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5 C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2 C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  margin-left: 17px;
+  top: 12px;
+}
+#search:hover ~ .icon-search,
+.main-bar ul li:nth-child(2):hover > .favorites-icon,
+.main-bar ul li:nth-child(3):hover > .basket-icon{
+  opacity: 1;
+}
+.main-bar ul li:nth-child(2):active > .favorites-icon,
+.main-bar ul li:nth-child(3):active > .basket-icon{
+  opacity: 0.5;
+}
+#search:focus ~ .icon-search{
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='17px' height='17px' viewBox='0 0 17 17' enable-background='new 0 0 17 17' xml:space='preserve'%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='Layer_2'%3E%3Cpath fill='%23ee3643' d='M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5 C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2 C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z'/%3E%3C/g%3E%3C/svg%3E%0A");
+    opacity: 1;
 }
 .main-bar ul{
   list-style: none;
@@ -112,6 +153,7 @@ button{
   border: none;
   width: 270px;
   height: 42px;
+  padding-left: 49px;
 }
 #search::placeholder{
   color: #ffffff;
@@ -122,19 +164,31 @@ button{
 .basket,
 .favorites{
     background-color: #293449;
-    width: 150px;
+    width: 105px;
     height: 42px;
     display: inline-block;
     line-height: 42px;
-    text-align: center;
+    padding-left: 45px;
+}
+.favorites-icon{
+  width: 14px;
+  height: 16px;
+  margin: 12px 14px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='14px' height='16px' viewBox='0 0 14 16' enable-background='new 0 0 14 16' xml:space='preserve'%3E%3Cpath fill='%23ffffff' d='M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765 C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z'/%3E%3C/svg%3E%0A");
+}
+.basket-icon{
+  width: 15px;
+  height: 15px;
+  margin: 12px 14px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='15px' height='15px' viewBox='0 0 15 15' enable-background='new 0 0 15 15' xml:space='preserve'%3E%3Cg%3E%3Ccircle cx='4.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Ccircle cx='12.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Cpolygon points='15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .basket-catalog{
   background-color: #ee3643;
-  width: 150px;
+  width: 105px;
   height: 42px;
   display: inline-block;
   line-height: 42px;
-  text-align: center;
+  padding-left: 45px;
 }
 #search:hover,
 .basket:hover,
@@ -149,6 +203,7 @@ button{
 #search:focus{
   background-color: #ffffff;
   color: #000000;
+  padding-left: 49px;
 }
 .basket-catalog:hover{
   background-color: #ca2c37;
@@ -175,7 +230,6 @@ button{
 .header-panel{
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
   padding-top: 46px;
 }
 .title{
@@ -185,6 +239,8 @@ button{
   line-height: 23px;
   margin: 0;
   padding: 0;
+  position: relative;
+  padding-right: 71px;
 }
 .first-header-panel{
   display: flex;
@@ -201,22 +257,35 @@ button{
   width: 270px;
   height: 39px;
   line-height: 39px;
-  text-align: center;
   display: block;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-right: 66px;
+}
+.contact-info-header-catalog{
+  margin-right: 48px;
+}
+.icon-phone{
+  position: absolute;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 .contact-info-header span{
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  display: inline-block;
+  margin-left: 74px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .contact-info-header p{
   font-size: 14px;
-  line-height: 24px;
+  line-height: 14px;
   color: #32425c;
   margin: 0;
   margin-top: 10px;
+  display: inline-block;
+  margin-left: 7px;
 }
 .user-panel{
   list-style: none;
@@ -227,6 +296,23 @@ button{
 .sign-in{
   margin-right: 10px;
 }
+.sign-in .icon-login{
+  width: 20px;
+  height: 17px;
+  display: block;
+  position: absolute;
+  margin-left: 14px;
+  margin-top: -31px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='17px' viewBox='0 0 20 17' enable-background='new 0 0 20 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 '/%3E%3C/g%3E%3Cpath fill='%23c5c5c5' d='M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z'/%3E%3C/svg%3E%0A");
+}
+.user-panel button[name="sign-in"]:hover ~ .icon-login,
+.icon-login:hover{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='17px' viewBox='0 0 20 17' enable-background='new 0 0 20 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%2332425C' points='14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 '/%3E%3C/g%3E%3Cpath fill='%2332425C' d='M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z'/%3E%3C/svg%3E%0A");
+}
+.user-panel button[name="sign-in"]:active ~ .icon-login,
+.icon-login:active{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='17px' viewBox='0 0 20 17' enable-background='new 0 0 20 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 '/%3E%3C/g%3E%3Cpath fill='%23c5c5c5' d='M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z'/%3E%3C/svg%3E%0A");
+}
 .user-panel button{
   font-size: 21px;
   line-height: 21px;
@@ -234,6 +320,11 @@ button{
   width: 121px;
   height: 45px;
   border: none;
+}
+.user-panel button[name="sign-in"]{
+  padding: 0;
+  padding-left: 48px;
+  padding-right: 27px;
 }
 .user-panel button[name="sign-up"]{
   width: 150px;
@@ -254,18 +345,50 @@ button{
   width: 210px;
   justify-content: space-between;
   padding-left: 18px;
-  padding-top: 10px;
+  padding-top: 6px;
   align-items: flex-end;
+}
+.orders-lc li{
+  height: 18px;
+}
+.icon-user{
+  display: block;
+  width: 20px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='18px' viewBox='0 0 20 18' enable-background='new 0 0 20 18' xml:space='preserve'%3E%3Cpath fill='%23c5c5c5' d='M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415 c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277 c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  margin: 14px;
+}
+.icon-logout{
+  display: block;
+  width: 20px;
+  height: 17px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='17px' viewBox='0 0 21 17' enable-background='new 0 0 21 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 '/%3E%3Cpath fill='%23c5c5c5' d='M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027 v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  position: absolute;
+  margin: 14px 10px 14px 269px;
+}
+.username-block:hover > .icon-user{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='18px' viewBox='0 0 20 18' enable-background='new 0 0 20 18' xml:space='preserve'%3E%3Cpath fill='%2332425C' d='M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415 c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277 c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z'/%3E%3C/svg%3E%0A");
+}
+.username-block:hover > .icon-logout{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='17px' viewBox='0 0 21 17' enable-background='new 0 0 21 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%2332425C' points='21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 '/%3E%3Cpath fill='%2332425C' d='M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027 v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.username-block:active > .icon-user{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='18px' viewBox='0 0 20 18' enable-background='new 0 0 20 18' xml:space='preserve'%3E%3Cpath fill='%23c5c5c5' d='M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415 c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277 c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z'/%3E%3C/svg%3E%0A");
+}
+.username-block:active > .icon-logout{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='17px' viewBox='0 0 21 17' enable-background='new 0 0 21 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 '/%3E%3Cpath fill='%23c5c5c5' d='M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027 v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .username{
   font-size: 21px;
-  line-height: 45px;
+  line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  width: 299px;
-  height: 45px;
-  text-align: center;
+  width: 252px;
+  height: 31px;
   display: inline-block;
+  padding-left: 47px;
+  padding-top: 14px;
 }
 .user-orders,
 .user-personal-area{
@@ -285,11 +408,12 @@ button{
 .user-personal-area:active{
   color: #c5cad0;
 }
+.header-nav-div{
+  padding-bottom: 60px;
+}
 .header-navigation{
   height: 55px;
   background-color: #32425c;
-  margin-top: 44px;
-  margin-bottom: 60px;
   border-bottom: 5px solid #293449;
 }
 .header-navigation ul{
@@ -314,6 +438,35 @@ button{
 }
 .header-navigation a:active{
   color: #a8abaf;
+}
+.catalog-element-icons{
+  display: block;
+  position: absolute;
+}
+.icon-catalog-element-1{
+  width: 44px;
+  height: 65px;
+  margin-left: 213px;
+}
+.icon-catalog-element-2{
+  width: 75px;
+  height: 61px;
+  margin-left: 197px;
+}
+.icon-catalog-element-3{
+  width: 78px;
+  height: 62px;
+  margin-left: 191px;
+}
+.icon-catalog-element-5{
+  width: 69px;
+  height: 72px;
+  margin-left: 196px;
+}
+.icon-catalog-element-6{
+  width: 78px;
+  height: 63px;
+  margin-left: 191px;
 }
 .container-elements-first-line{
   display: flex;
@@ -399,17 +552,43 @@ button{
 }
 .element-4{
   display: flex;
-  background-image: url("../img/slider-2.jpg");
-  background-repeat: no-repeat;
 }
-.slider-btns{
-  display: flex;
-  padding-top: 114px;
-  padding-right: 20px;
-  padding-left: 25px;
+.element-4 .first-slider,
+.element-4 .second-slider{
+  display: none;
 }
-.slider-btns .left-btn{
-  margin: 0 auto;
+.element-4 .slider-controls{
+  position: absolute;
+  margin-left: 292px;
+  margin-top: 217px;
+}
+.element-4 .slider-controls label{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 3px;
+}
+.container-elements-second-line input:nth-child(1):checked ~ .big-element .element-4 .first-slider{
+  display: block;
+}
+.container-elements-second-line input:nth-child(2):checked ~ .big-element .element-4 .second-slider{
+  display: block;
+}
+.container-elements-second-line input:nth-child(1):checked ~ .big-element .element-4 .slider-controls-item-1::before,
+.container-elements-second-line input:nth-child(2):checked ~ .big-element .element-4 .slider-controls-item-2::before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  width: 6px;
+  height: 6px;
+  background: #ee3643;
+  border-radius: 3px;
 }
 .element-4 .first-slider{
   background-image: url("../img/slider-1.jpg");
@@ -418,8 +597,8 @@ button{
   height: 266px;
 }
 .element-4 .second-slider{
-  /* background-image: url("../img/slider-2.jpg");
-  background-repeat: no-repeat; */
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
   width: 620px;
   height: 266px;
 }
@@ -442,6 +621,18 @@ button{
   top: 30px;
   left: 25px;
 }
+.left-btn-slider,
+.right-btn-slider{
+  position: absolute;
+}
+.left-btn-slider{
+  margin-left: 25px;
+  margin-top: 114px;
+}
+.right-btn-slider{
+  margin-left: 578px;
+  margin-top: 114px;
+}
 .element-4 .catalog-btn{
   font-size: 14px;
   line-height: 38px;
@@ -454,6 +645,9 @@ button{
   height: 38px;
   text-align: center;
   border-radius: 4px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 206px;
 }
 .element-5{
   background-color: #8ed78f;
@@ -526,6 +720,25 @@ label{
 }
 label:active{
   color: #b8b8b8;
+}
+.new-catalog-item{
+  width: 60px;
+  height: 59px;
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-new.png");
+  background-repeat: no-repeat;
+  margin-left: 90px;
+}
+.new-catalog-item-materials{
+  width: 60px;
+  height: 59px;
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-new.png");
+  background-repeat: no-repeat;
+  margin-left: 240px;
+  margin-top: -32px;
 }
 .main-catalog{
   display: flex;
@@ -897,7 +1110,7 @@ label:active{
   color: #999999;
   text-align: center;
   display: block;
-  margin-bottom: 12px;
+
 }
 .catalog .current-price{
   font-family: "PT Sans", Arial, sans-serif;
@@ -908,10 +1121,9 @@ label:active{
   color: #ffffff;
   text-align: center;
   display: block;
-  background-color: #ee3643;
+  background-image: url("../img/price-button.svg");
   width: 141px;
   height: 38px;
-  border-radius: 4px;
 }
 .popular-manufaturers ul{
     list-style: none;
@@ -981,7 +1193,7 @@ label:active{
 .btn-show:active{
   border: 1.0px solid #ee3643;
 }
-.pages a:focus{
+.pages a:focus:not(.next-page){
 color: #ffffff;
 line-height: 38px;
 background-color: #ee3643;
