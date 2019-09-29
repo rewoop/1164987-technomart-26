@@ -81,7 +81,7 @@ button{
   width: auto;
 }
 .lightblue-background{
-  background-color: #f2f4f8;
+  background-color: #f4f8f9;
   width: auto;
 }
 .main-bar{
@@ -1091,6 +1091,76 @@ label:active{
   padding-bottom: 20px;
   justify-content: space-between;
 }
+.btns-catalog-element{
+  display: none;
+  width: 218px;
+  height: 170px;
+}
+.btns-catalog-element button{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+.btns-catalog-element .buy-btn{
+  color: #ffffff;
+  width: 135px;
+  height: 38px;
+  background-color: #63a63e;
+  border-bottom: 3px solid #367315;
+  padding: 10px 45px 14px 49px;
+  margin-top: 44px;
+  margin-bottom: 7px;
+}
+.btns-catalog-element .to-fav-btn{
+  color: #32425c;
+  width: 135px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 3.0px solid #63a63e;
+}
+.btns-catalog-element .buy-btn::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='15px' height='15px' viewBox='0 0 15 15' enable-background='new 0 0 15 15' xml:space='preserve'%3E%3Cg%3E%3Ccircle cx='4.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Ccircle cx='12.5' cy='13.5' r='1.5' fill='%23ffffff'/%3E%3Cpolygon points='15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 ' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E%0A");
+  opacity: 0.3;
+  display: inline-block;
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 1px;
+}
+.btns-catalog-element .buy-btn:hover{
+  background-color: #5fbb2d;
+}
+.btns-catalog-element .buy-btn:active{
+  background-color: #518534;
+  border: none;
+}
+.btns-catalog-element .to-fav-btn:hover{
+  border-color: #32425c;
+}
+.btns-catalog-element .to-fav-btn:active{
+  opacity: 0.3;
+}
+.btns-catalog-element .buy-btn:hover::before,
+.btns-catalog-element .buy-btn:active::before{
+  opacity: 1;
+}
+.catalog li:hover{
+  box-shadow: 0px 10px 25px 0px rgba(41,51,73,0.5);
+}
+.catalog li:hover img{
+  display: none;
+}
+.catalog li:hover .btns-catalog-element{
+  display: block;
+}
 .catalog li h3,
 .catalog li p{
   margin: 0;
@@ -1126,12 +1196,12 @@ label:active{
   height: 38px;
 }
 .popular-manufaturers ul{
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 10px 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .popular-manufaturers li{
   background-color: #ffffff;
@@ -1148,6 +1218,15 @@ label:active{
 .popular-manufaturers li a img{
   display: inline-block;
 }
+.popular-manufaturers li:hover{
+  box-shadow: 0px 10px 25px 0px rgba(41,51,73,0.5);
+}
+.popular-manufaturers li:active{
+  box-shadow: 0px 4px 10px 0px rgba(41,51,73,0.5);
+}
+.popular-manufaturers li:active img{
+  opacity: 0.3;
+}
 .pages{
   list-style: none;
   display: flex;
@@ -1159,7 +1238,7 @@ label:active{
   text-transform: uppercase;
   margin-right: 10px;
 }
-.pages a,
+.pages label,
 .btn-show{
   color: #000000;
   width: 38px;
@@ -1176,7 +1255,7 @@ label:active{
   height: 38px;
   margin-top: 75px;
 }
-.pages .next-page{
+.pages .next-page-label{
   width: 140px;
   height: 38px;
   line-height: 38px;
@@ -1185,15 +1264,23 @@ label:active{
   border: 1.0px solid #e5e5e5;
   border-radius: 4px;
 }
-.pages a:hover,
-.btn-show:hover{
+.btn-show:hover,
+.first-page:hover ~ li .first-page-label,
+.second-page:hover ~ li .second-page-label,
+.third-page:hover ~ li .third-page-label,
+.next-page:hover ~ li .next-page-label{
   border: 1.0px solid #bdc6ca;
 }
-.pages a:active,
-.btn-show:active{
+.btn-show:active,
+.first-page:active ~ li .first-page-label,
+.second-page:active ~ li .second-page-label,
+.third-page:active ~ li .third-page-label,
+.next-page:active ~ li .next-page-label{
   border: 1.0px solid #ee3643;
 }
-.pages a:focus:not(.next-page){
+.first-page:checked ~ li .first-page-label,
+.second-page:checked ~ li .second-page-label,
+.third-page:checked ~ li .third-page-label{
 color: #ffffff;
 line-height: 38px;
 background-color: #ee3643;
@@ -1202,10 +1289,6 @@ border-radius: 4px;
 .services-sliders{
   display: flex;
   margin-top: 75px;
-  background-image: url("../img/delivery.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-bottom: 100px;
 }
 .services ul{
   list-style: none;
@@ -1222,41 +1305,74 @@ border-radius: 4px;
 }
 .services ul li h3{
   margin-top: 0;
+  margin-bottom: 22px;
 }
 .services h2{
   margin-top: 0;
   padding-top: 68px;
 }
+.delivery-slider,
+.guarantee-slider,
+.credit-slider{
+  display: none;
+}
+.delivery-slider .delivery-png{
+  position: absolute;
+  margin-left: 152px;
+  margin-top: -131px;
+}
+.guarantee-slider .guarantee-png{
+  position: absolute;
+  margin-left: 230px;
+  margin-top: -178px;
+}
+.credit-slider .credit-png{
+  position: absolute;
+  margin-left: 149px;
+  margin-top: -108px;
+}
 .services .slider-btn{
   display: flex;
   flex-direction: column;
+  padding-bottom: 98px;
 }
-.slider-btn button{
-  padding-left: 23px;
-}
-.services button{
+.services label{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
-  line-height: 30px;
-  font-weight: bold;
+  line-height: 21px;
+  font-weight: 700;
   color: #ffffff;
-  width: 240px;
-  height: 62px;
+  width: 217px;
+  height: 41px;
   background-color: #32425c;
   text-align: left;
-  border:none
+  border:none;
+  padding-left: 23px;
+  padding-top: 21px;
+  text-transform: capitalize;
 }
-.services button:hover{
+.services label:hover{
   background-color: #293449;
 }
-.services button:focus{
+.delivery-input:checked ~ .slider-btn label:nth-child(1),
+.guarantee-input:checked ~ .slider-btn label:nth-child(2),
+.credit-input:checked ~ .slider-btn label:nth-child(3){
   background-color: #ffffff;
   color: #32425c;
+}
+.delivery-input:checked ~ ul .delivery-slider{
+  display: block;
+}
+.guarantee-input:checked ~ ul .guarantee-slider{
+  display: block;
+}
+.credit-input:checked ~ ul .credit-slider{
+  display: block;
 }
 .services h3{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 36px;
   color: #32425c;
   font-weight: 400;
   text-transform: uppercase;
@@ -1265,7 +1381,7 @@ border-radius: 4px;
   font-family: "GillSans", "Cuprum", Arial, sans-serif;
   font-style: italic;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 36px;
   font-weight: 600;
 }
 .services p{
@@ -1274,7 +1390,7 @@ border-radius: 4px;
   line-height: 24px;
   color: #000000;
   font-weight: 400;
-  margin-bottom: 0;
+  margin: 0;
 }
 .info{
   display: flex;

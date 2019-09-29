@@ -144,7 +144,13 @@
         </div>
         <ul class="p-left-null">
           <li>
-            <a href="#"><img src="img/bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000"></a>
+            <a href="#">
+              <img src="img/bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <div class="btns-catalog-element">
+                <button class="buy-btn" type="button" name="buy">Купить</button>
+                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+              </div>
+            </a>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -155,7 +161,13 @@
             <p class="current-price">25500 Р.</p>
           </li>
           <li>
-            <a href="#"><img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
+            <a href="#">
+              <img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <div class="btns-catalog-element">
+                <button class="buy-btn" type="button" name="buy">Купить</button>
+                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+              </div>
+            </a>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -166,7 +178,13 @@
             <p class="current-price">15500 Р.</p>
           </li>
           <li>
-            <a href="#"><img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000"></a>
+            <a href="#">
+              <img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <div class="btns-catalog-element">
+                <button class="buy-btn" type="button" name="buy">Купить</button>
+                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+              </div>
+            </a>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -178,7 +196,13 @@
           </li>
           <li>
             <span class="new-catalog-item"></span>
-            <a href="#"><img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
+            <a href="#">
+              <img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <div class="btns-catalog-element">
+                <button class="buy-btn" type="button" name="buy">Купить</button>
+                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+              </div>
+            </a>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -244,13 +268,16 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-sliders">
+            <input class="delivery-input visually-hidden" id="delivery" type="radio" name="services" checked>
+            <input class="guarantee-input visually-hidden" id="guarantee" type="radio" name="services">
+            <input class="credit-input visually-hidden" id="credit" type="radio" name="services">
             <div class="slider-btn">
-              <button type="button">Доставка</button>
-              <button type="button">Гарантия</button>
-              <button type="button">Кредит</button>
+              <label for="delivery">Доставка</label>
+              <label for="guarantee">Гарантия</label>
+              <label for="credit">Кредит</label>
             </div>
             <ul>
-              <li>
+              <li class="delivery-slider">
                 <h3>Доставка</h3>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо <br>
@@ -258,9 +285,9 @@
                   Ведь мы неплохо заработаем, <br>
                   поднимая его на ваш этаж!
                 </p>
-                <!-- <img src="img/delivery.png" alt=""> -->
+                <img class="delivery-png" src="img/delivery.png" alt="">
               </li>
-              <!-- <li>
+              <li class="guarantee-slider">
                 <h3 class="guarantee">Гарантия</h3>
                 <p>
                   Если купленный у нас товар поломается или заискрит, <br>
@@ -269,16 +296,16 @@
                   сгоревший товар на новый. <br>
                   Дом уж восстановите как-нибудь сами.
                 </p>
-                <img src="img/guarantee.png" alt="">
+                <img class="guarantee-png" src="img/guarantee.png" alt="">
               </li>
-              <li>
+              <li class="credit-slider">
                 <h3>Кредит</h3>
                 <p>
                   Залезть в долговую яму стало проще! <br>
                   Кредитные консультанты придут вам на помощь.
                 </p>
-                <img src="img/credit.png" alt="">
-              </li> -->
+                <img class="credit-png" src="img/credit.png" alt="">
+              </li>
             </ul>
           </div>
         </section>
