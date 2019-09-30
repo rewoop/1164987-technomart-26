@@ -1238,7 +1238,7 @@ label:active{
   text-transform: uppercase;
   margin-right: 10px;
 }
-.pages label,
+.pages a,
 .btn-show{
   color: #000000;
   width: 38px;
@@ -1255,7 +1255,7 @@ label:active{
   height: 38px;
   margin-top: 75px;
 }
-.pages .next-page-label{
+.pages .next-page{
   width: 140px;
   height: 38px;
   line-height: 38px;
@@ -1264,23 +1264,15 @@ label:active{
   border: 1.0px solid #e5e5e5;
   border-radius: 4px;
 }
-.btn-show:hover,
-.first-page:hover ~ li .first-page-label,
-.second-page:hover ~ li .second-page-label,
-.third-page:hover ~ li .third-page-label,
-.next-page:hover ~ li .next-page-label{
+.pages a:hover,
+.btn-show:hover{
   border: 1.0px solid #bdc6ca;
 }
-.btn-show:active,
-.first-page:active ~ li .first-page-label,
-.second-page:active ~ li .second-page-label,
-.third-page:active ~ li .third-page-label,
-.next-page:active ~ li .next-page-label{
+.pages a:active,
+.btn-show:active{
   border: 1.0px solid #ee3643;
 }
-.first-page:checked ~ li .first-page-label,
-.second-page:checked ~ li .second-page-label,
-.third-page:checked ~ li .third-page-label{
+.pages a:focus:not(.next-page){
 color: #ffffff;
 line-height: 38px;
 background-color: #ee3643;
