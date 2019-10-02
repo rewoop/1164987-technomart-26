@@ -1436,13 +1436,17 @@ border-radius: 4px;
 .about-company a:hover,
 .contacts button:hover,
 .catalog-btn:hover,
-.section-header-btn:hover{
+.section-header-btn:hover,
+.write-us-btn:hover,
+.added-to-cart-footer a:hover{
   background-color: #ca2c37;
 }
 .about-company a:active,
 .contacts button:active,
 .catalog-btn:active,
-.section-header-btn:active{
+.section-header-btn:active,
+.write-us-btn:active,
+.added-to-cart-footer a:active{
   background-color: #ba2732;
 }
 .contacts p{
@@ -1608,30 +1612,213 @@ border-radius: 4px;
 }
 .write-us{
   width: 620px;
-  height: 310px;
+  height: 423px;
   background-color: #ffffff;
   border-top: 7px solid #ff5257;
   box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.75);
   position: absolute;
   left: 50%;
-  top: 2504px;
+  top: 2537px;
   margin-left: -310px;
+  display: none;
+}
+.popup-close-btn{
+  background-image: url("../img/write-us-chest.svg");
+  height: 21px;
+  width: 21px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+.write-us-form{
+  width: 620px;
+  height: 423px;
+}
+.container-write-us{
+  width: 460px;
+  margin: 37px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.write-us-name{
+  padding-right: 166px;
+}
+.write-us-email{
+  padding-right: 133px;
+}
+.write-us-name-input{
+  margin-bottom: 19px;
+}
+.write-us-form label{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: inherit;
+  padding-bottom: 13px;
+}
+.write-us-form input{
+  width: 200px;
+  height: 34px;
+  background-color: #ffffff;
+  border: 2.0px solid #d7dcde;
+  border-radius: 4px;
+  padding-left: 16px;
+  text-align: left;
+  vertical-align: middle;
+  outline: none;
+}
+.write-us-form .letter{
+  width: 424px;
+  height: 82px;
+  background-color: #ffffff;
+  border: 2.0px solid #d7dcde;
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: top;
+  resize: none;
+  border-radius: 4px;
+  outline: none;
+}
+.write-us-form input:hover,
+.write-us-form .letter:hover{
+  border-color: #b5b5b5;
+}
+.write-us-form input:focus,
+.write-us-form .letter:focus{
+  border-color: #ee3643;
+}
+.write-us-form input::-webkit-input-placeholder,
+.write-us-form input::-moz-placeholder,
+.write-us-form input:-moz-placeholder,
+.write-us-form input:-ms-input-placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #999999;
+}
+.write-us-form .letter::-webkit-input-placeholder,
+.write-us-form .letter::-moz-placeholder,
+.write-us-form .letter:-moz-placeholder,
+.write-us-form .letter:-ms-input-placeholder{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #999999;
 }
 .write-us-footer{
+  width: 620px;
   height: 112px;
   background-color: #f4f4f4;
+  text-align: center;
+}
+.write-us-btn{
+  width: 460px;
+  height: 38px;
+  background-color: #ee3643;
+  border: none;
+  border-radius: 4px;
+  margin: 37px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.map-popup{
+  width: 940px;
+  height: 446px;
+  background-color: transparent;
+  box-shadow: 0px 0px 15px 1px rgba(47,41,42,0.5);
+  position: absolute;
+  left: 50%;
+  top: 2370px;
+  margin-left: -470px;
+  display: none;
+}
+.added-to-cart-popup{
+  width: 620px;
+  height: 275px;
+  background-color: #ffffff;
+  border-top: 7px solid #ff5257;
+  box-shadow: 0px 20px 40px 0px rgba(41,51,73,0.75);
+  position: fixed;
+  left: 50%;
+  top: 410px;
+  margin-left: -310px;
+  display: none;
+}
+.added-to-cart-popup h2{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: none;
+  margin-top: 75px;
+  margin-bottom: 68px;
+  margin-right: 126px;
+  margin-left: 179px;
+}
+.added-to-cart-popup h2::before{
+  content: "";
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/added-to-cart.svg");
+  position: absolute;
+  top: 55px;
+  left: 81px;
+}
+.added-to-cart-footer{
+  width: 620px;
+  height: 112px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.added-to-cart-footer a{
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 4px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 37px;
+}
+.added-to-cart-footer button{
+  width: 220px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 10px;
+  margin-top: 37px;
 }
 .visually-hidden{
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
