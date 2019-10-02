@@ -15,6 +15,10 @@ body {
 
   background-color: #ffffff;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 .cuprum-family{
   font-family: "Cuprum", Arial, sans-serif;
 }
@@ -1194,6 +1198,10 @@ label:active{
   background-image: url("../img/price-button.svg");
   width: 141px;
   height: 38px;
+}
+.catalog img{
+  width: 218px;
+  height: 170px;
 }
 .popular-manufaturers ul{
   list-style: none;
