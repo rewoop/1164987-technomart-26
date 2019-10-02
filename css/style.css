@@ -25,6 +25,7 @@ img{
 .container{
   width: 940px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .m-top-60{
   margin-top: 60px;
@@ -419,6 +420,7 @@ button{
   height: 55px;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+  padding: 0;
 }
 .header-navigation ul{
   list-style: none;
