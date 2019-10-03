@@ -1341,6 +1341,16 @@ border-radius: 4px;
   flex-direction: column;
   padding-bottom: 98px;
 }
+.services .slider-btn::after{
+  content: "";
+  width: 10px;
+  height: 279px;
+  opacity: 0.25;
+  background-image: url("../img/black-line-slider.png");
+  position: absolute;
+  margin-left: 230px;
+  margin-top: -45px;
+}
 .services label{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -1356,6 +1366,7 @@ border-radius: 4px;
   padding-top: 21px;
   text-transform: capitalize;
   cursor: pointer;
+  box-shadow: 0px 1px 0px 0px #ffffff;
 }
 .services label:hover{
   background-color: #293449;
