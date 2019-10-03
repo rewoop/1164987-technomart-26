@@ -1473,6 +1473,9 @@ border-radius: 4px;
   color: #ffffff;
   margin-top: auto;
 }
+.contacts img{
+  cursor: pointer;
+}
 .post-scriptum{
   padding: 67px 0;
 }
@@ -1740,7 +1743,7 @@ border-radius: 4px;
 .map-popup{
   width: 940px;
   height: 446px;
-  background-color: transparent;
+  background-image: url("../img/map-popup.png");
   box-shadow: 0px 0px 15px 1px rgba(47,41,42,0.5);
   position: absolute;
   left: 50%;
