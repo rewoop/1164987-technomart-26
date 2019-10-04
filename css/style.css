@@ -1367,6 +1367,8 @@ border-radius: 4px;
   text-transform: capitalize;
   cursor: pointer;
   box-shadow: 0px 1px 0px 0px #ffffff;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 .services label:hover{
   background-color: #293449;
@@ -1376,6 +1378,7 @@ border-radius: 4px;
 .credit-input:checked ~ .slider-btn label:nth-child(3){
   background-color: #ffffff;
   color: #32425c;
+  border: none;
 }
 .delivery-input:checked ~ ul .delivery-slider{
   display: block;
