@@ -100,22 +100,22 @@
         </section>
       </div>
       <div class="container-elements-second-line">
-        <input class="visually-hidden" type="radio" id="first-slider" name="toggle">
-        <input class="visually-hidden" type="radio" id="second-slider" name="toggle" checked>
         <div class="big-element">
           <section class="element-4">
             <div class="slider-controls">
-              <label class="slider-controls-item-1" for="first-slider"></label>
-              <label class="slider-controls-item-2" for="second-slider"></label>
+              <span class="slider-dots-item" onclick="currentSlide(1)"></span>
+              <span class="slider-dots-item" onclick="currentSlide(2)"></span>
             </div>
-            <a href="#" class="left-btn-slider"><img src="img/left-slider.svg" alt="Кнопка влево"></a>
-            <a href="#" class="right-btn-slider"><img src="img/right-slider.svg" alt="Кнопка вправо"></a>
+            <a href="#" class="left-btn-slider" onclick="minusSlide()"><img src="img/left-slider.svg" alt="Кнопка влево"></a>
+            <a href="#" class="right-btn-slider" onclick="plusSlide()"><img src="img/right-slider.svg" alt="Кнопка вправо"></a>
             <a href="catalog.html" class="catalog-btn">Открыть каталог</a>
-            <div class="first-slider">
+            <div class="slider-item">
+              <img src="img/slider-1.jpg" alt="Слайдер с перфораторами">
               <h2 class="mp-null">Перфораторы</h2>
               <p class="mp-null">Настоящие мужские игрушки</p>
             </div>
-            <div class="second-slider">
+            <div class="slider-item">
+              <img src="img/slider-2.jpg" alt="Слайдер с дрелями">
               <h2 class="mp-null">Дрели</h2>
               <p class="mp-null">Соседям на радость!</p>
             </div>
@@ -144,11 +144,11 @@
           <li>
             <a href="#">
               <img src="img/bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-              <div class="btns-catalog-element">
-                <button class="buy-btn" type="button" name="buy">Купить</button>
-                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
-              </div>
             </a>
+            <div class="btns-catalog-element">
+              <button class="buy-btn" type="button" name="buy">Купить</button>
+              <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+            </div>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -161,11 +161,11 @@
           <li>
             <a href="#">
               <img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-              <div class="btns-catalog-element">
-                <button class="buy-btn" type="button" name="buy">Купить</button>
-                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
-              </div>
             </a>
+            <div class="btns-catalog-element">
+              <button class="buy-btn" type="button" name="buy">Купить</button>
+              <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+            </div>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -178,11 +178,11 @@
           <li>
             <a href="#">
               <img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-              <div class="btns-catalog-element">
-                <button class="buy-btn" type="button" name="buy">Купить</button>
-                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
-              </div>
             </a>
+            <div class="btns-catalog-element">
+              <button class="buy-btn" type="button" name="buy">Купить</button>
+              <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+            </div>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -196,11 +196,11 @@
             <span class="new-catalog-item"></span>
             <a href="#">
               <img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-              <div class="btns-catalog-element">
-                <button class="buy-btn" type="button" name="buy">Купить</button>
-                <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
-              </div>
             </a>
+            <div class="btns-catalog-element">
+              <button class="buy-btn" type="button" name="buy">Купить</button>
+              <button class="to-fav-btn" type="button" name="to-favorite">В закладки</button>
+            </div>
             <h3>
               <a href="#">
               <span>Перфоратор BOSCH</span><br>
@@ -406,5 +406,18 @@
       <button class="popup-close-btn" type="button"></button>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003404!2d30.3208587164867!3d59.93871916905368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570129931014!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
+    <section class="added-to-cart-popup">
+      <button class="popup-close-btn" type="button"></button>
+      <h2>Товар добавлен в корзину!</h2>
+      <div class="added-to-cart-footer">
+        <a href="#">Оформить заказ</a>
+        <button type="button">Продолжить покупки</button>
+      </div>
+    </section>
+    <script src="js/write-us.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/favorites_basket.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
