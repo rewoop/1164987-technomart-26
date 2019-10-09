@@ -14,6 +14,9 @@ img{
   max-width: 100%;
   height: auto;
 }
+header .m-top-34{
+  margin-top: 34px;
+}
 .cuprum-family{
   font-family: "Cuprum", Arial, sans-serif;
 }
@@ -27,9 +30,6 @@ img{
 }
 .m-top-59{
   margin-top: 59px;
-}
-header .m-top-34{
-  margin-top: 34px;
 }
 .m-bottom-60{
   margin-bottom: 60px;
@@ -1185,7 +1185,7 @@ label:active{
   margin: 0;
   max-width: 220px;
 }
-.catalog a{
+.catalog a:not(.section-header-btn){
   color: #000000;
   line-height: 20px;
   text-align: center;
@@ -1620,9 +1620,11 @@ background-color: #ee3643;
 }
 .copyright{
   width: 300px;
+  flex: 1;
 }
 .social-media{
   display: flex;
+  flex: 0.6;
 }
 .social-media div{
   width: 42px;
