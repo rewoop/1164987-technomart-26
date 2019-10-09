@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -20,7 +21,7 @@
             <li>
           <form class="" action="https://echo.htmlacademy.ru" method="get">
             <label for="search" class="visually-hidden">Поиск:</label>
-            <input id="search" type="search" name="search" value="" placeholder="Поиск:">
+            <input class="search-input" id="search" type="search" name="search" value="" placeholder="Поиск:">
             <span class="icon-search icons-header icon-cursor-search"></span>
           </form>
             </li>
@@ -40,41 +41,41 @@
       </div>
       <div class="lightblue-background">
         <div class="container header-panel">
-          <p class="title"> Интернет-магазин <br>
-            строительных материалов <br>
-            и инструментов для ремонта
-          </p>
-          <section class="contact-info-header contact-info-header-catalog">
-            <h2 class="visually-hidden">Контактный телефон:</h2>
-            <svg class="icon-phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
-              <g id="UrwUhy_1_">
-              <g>
-              <path fill="#B7BFC8" d="M15.572,18.985c-0.312,0-0.629,0-0.941,0c-4.129-0.488-7.157-2.408-9.359-4.864
-                c-2.21-2.461-3.954-5.629-4.294-9.893c0-0.382,0-0.762,0-1.144C1.056,2.31,1.437,1.78,1.876,1.327
-                C2.425,0.766,3.25,0.044,4.002,0.019c0.554-0.018,1.5,0.38,1.879,0.899C6.21,1.364,6.385,2.257,6.537,2.921
-                c0.154,0.671,0.505,1.643,0.408,2.289C6.797,6.217,5.458,6.644,5.066,7.376c1.307,3.135,3.443,5.439,6.293,7.031
-                c0.715-0.392,1.346-1.572,2.332-1.595c0.359-0.009,0.818,0.178,1.184,0.286c0.402,0.121,0.75,0.275,1.104,0.408
-                c0.596,0.224,1.648,0.521,2.004,1.021c0.365,0.513,0.57,1.356,0.49,1.879C18.309,17.447,16.594,18.603,15.572,18.985z"/></g></g></svg>
-              <span>+7 (812) 555-05-55</span>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="title"> Интернет-магазин <br>
+              строительных материалов <br>
+              и инструментов для ремонта
+            </p>
+            <section class="contact-info-header contact-info-header-catalog">
+              <h2 class="visually-hidden">Контактный телефон:</h2>
+              <svg class="icon-phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+                <g id="UrwUhy_1_">
+                <g>
+                <path fill="#B7BFC8" d="M15.572,18.985c-0.312,0-0.629,0-0.941,0c-4.129-0.488-7.157-2.408-9.359-4.864
+                  c-2.21-2.461-3.954-5.629-4.294-9.893c0-0.382,0-0.762,0-1.144C1.056,2.31,1.437,1.78,1.876,1.327
+                  C2.425,0.766,3.25,0.044,4.002,0.019c0.554-0.018,1.5,0.38,1.879,0.899C6.21,1.364,6.385,2.257,6.537,2.921
+                  c0.154,0.671,0.505,1.643,0.408,2.289C6.797,6.217,5.458,6.644,5.066,7.376c1.307,3.135,3.443,5.439,6.293,7.031
+                  c0.715-0.392,1.346-1.572,2.332-1.595c0.359-0.009,0.818,0.178,1.184,0.286c0.402,0.121,0.75,0.275,1.104,0.408
+                  c0.596,0.224,1.648,0.521,2.004,1.021c0.365,0.513,0.57,1.356,0.49,1.879C18.309,17.447,16.594,18.603,15.572,18.985z"/></g></g></svg>
+                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </section>
+          <section class="user-panel">
+            <h2 class="visually-hidden">Данные пользователя</h2>
+            <ul class="user">
+              <li class="username-block">
+                <a href="profile.html"><span class="icon-user icon-cursor-pointer"></span></a>
+                <a href="logout.html"><span class="icon-logout icon-cursor-pointer"></span></a>
+                <a href="profile.html" class="username">Равшан Джамшутович</a>
+              </li>
+              <li class="orders-lc">
+                <a href="#" class="user-orders">Мои заказы</a>
+                <img src="img/shape-1.svg" alt="">
+                <a href="#" class="user-personal-area">Личный кабинет</a>
+              </li>
+            </ul>
           </section>
-      <section class="user-panel">
-        <h2 class="visually-hidden">Данные пользователя</h2>
-        <ul class="user">
-          <li class="username-block">
-            <a href="profile.html"><span class="icon-user icon-cursor-pointer"></span></a>
-            <a href="logout.html"><span class="icon-logout icon-cursor-pointer"></span></a>
-            <a href="profile.html" class="username">Равшан Джамшутович</a>
-          </li>
-          <div class="orders-lc">
-            <li><a href="#" class="user-orders">Мои заказы</a></li>
-            <li><img src="img/shape-1.svg" alt=""></li>
-            <li><a href="#" class="user-personal-area">Личный кабинет</a></li>
-          </div>
-        </ul>
         </div>
-      </section>
       <div class="header-nav-div">
           <nav class="header-navigation container m-top-34">
             <ul>
@@ -118,9 +119,9 @@
                       <span class="dott-max-price-range"></span>
                     </div>
                     <div class="value-price-range">
-                      <div class="min-price-value"><input type="text" name="" value="0"></div>
+                      <div class="min-price-value"><input type="text" name="min-price-value" value="0"></div>
                       <span class="line">—</span>
-                      <div class="max-price-value"><input type="text" name="" value="30000"></div>
+                      <div class="max-price-value"><input type="text" name="max-price-value" value="30000"></div>
                     </div>
                   </div>
                 </fieldset>
@@ -166,7 +167,7 @@
                     </label>
                     <label class="radio">
                       <input type="radio" name="power" value="network" class="radio-input">
-                      <span class="radio-box"></span>
+                      <span class="radio-box" tabindex="0"></span>
                       <span class="label-name">Сетевые</span>
                     </label>
                   </div>
@@ -184,13 +185,13 @@
               </div>
               <div class="up-down-filter">
                 <a href="#">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                   <polygon fill="#c5c5c5" points="5.5,0 0,10 11,10 "/>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                   <polyline fill="#c5c5c5" points="5.5,10 0,0 11,0 "/>
                   </svg>
@@ -377,36 +378,38 @@
     <footer class="cuprum-family">
       <div class="first-footer-background">
         <section class="container first-footer-section">
-        <div class="first-footer">
-          <div class="logo-footer">
-            <a href="index.html">
-            <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
-            </a>
+          <h2 class="visually-hidden">Навигация по сайту</h2>
+          <div class="first-footer">
+            <div class="logo-footer">
+              <a href="index.html">
+              <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
+              </a>
+            </div>
+            <div class="site-navigation">
+              <ul>
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="site-navigation">
+          <nav class="catalog-navigation">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+            +7 (812) 555-05-55</p>
             <ul>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
             </ul>
-          </div>
-        </div>
-        <nav class="catalog-navigation">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-          +7 (812) 555-05-55</p>
-          <ul>
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-          </ul>
-        </nav>
+          </nav>
         </section>
       </div>
       <div class="second-footer-background">
         <section class="container second-footer">
+          <h2 class="visually-hidden">Правовая информация</h2>
           <div class="copyright">
             <p>© 2010–2019 Компания «Техномарт» <br>
               Все права защищены</p>

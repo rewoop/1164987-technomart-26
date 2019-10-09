@@ -28,7 +28,7 @@ img{
 .m-top-59{
   margin-top: 59px;
 }
-body header .m-top-34{
+header .m-top-34{
   margin-top: 34px;
 }
 .m-bottom-60{
@@ -61,9 +61,6 @@ body header .m-top-34{
 }
 .icon-cursor-search{
   cursor: text;
-}
-.dblock{
-  display: inline-block;
 }
 a{
   text-decoration: none;
@@ -105,12 +102,12 @@ button{
   top: 12px;
 }
 .search-input:hover ~ .icon-search,
-.main-bar ul li:nth-child(2):hover > .favorites-icon,
-.main-bar ul li:nth-child(3):hover > .basket-icon{
+.main-bar li:nth-child(2):hover > .favorites-icon,
+.main-bar li:nth-child(3):hover > .basket-icon{
   opacity: 1;
 }
-.main-bar ul li:nth-child(2):active > .favorites-icon,
-.main-bar ul li:nth-child(3):active > .basket-icon{
+.main-bar li:nth-child(2):active > .favorites-icon,
+.main-bar li:nth-child(3):active > .basket-icon{
   opacity: 0.5;
 }
 .search-input:focus ~ .icon-search{
@@ -172,6 +169,7 @@ button{
     display: inline-block;
     line-height: 42px;
     padding-left: 45px;
+    vertical-align: middle;
 }
 .favorites-icon{
   width: 14px;
@@ -193,6 +191,7 @@ button{
   display: inline-block;
   line-height: 42px;
   padding-left: 45px;
+  vertical-align: middle;
 }
 .search-input:hover,
 .basket:hover,
@@ -225,6 +224,7 @@ button{
   line-height: 42px;
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
 }
 .checkout:hover{
   background-color: #5fbb2d;
@@ -276,7 +276,8 @@ button{
   margin-bottom: 10px;
   margin-left: 15px;
 }
-.contact-info-header span{
+.contact-info-header a,
+.contact-info-header-catalog a{
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -284,6 +285,7 @@ button{
   margin-left: 74px;
   margin-top: 10px;
   margin-bottom: 10px;
+  vertical-align: middle;
 }
 .contact-info-header p{
   font-size: 14px;
@@ -293,6 +295,7 @@ button{
   margin-top: 10px;
   display: inline-block;
   margin-left: 7px;
+  vertical-align: top;
 }
 .user-panel{
   list-style: none;
@@ -353,9 +356,9 @@ button{
   justify-content: space-between;
   padding-left: 18px;
   padding-top: 6px;
-  align-items: flex-end;
+  align-items: center;
 }
-.orders-lc li{
+.orders-lc a{
   height: 18px;
 }
 .icon-user{
@@ -374,16 +377,16 @@ button{
   position: absolute;
   margin: 14px 10px 14px 269px;
 }
-.username-block a .icon-user:hover {
+.username-block .icon-user:hover {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='18px' viewBox='0 0 20 18' enable-background='new 0 0 20 18' xml:space='preserve'%3E%3Cpath fill='%2332425C' d='M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415 c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277 c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z'/%3E%3C/svg%3E%0A");
 }
-.username-block a .icon-logout:hover{
+.username-block .icon-logout:hover{
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='17px' viewBox='0 0 21 17' enable-background='new 0 0 21 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%2332425C' points='21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 '/%3E%3Cpath fill='%2332425C' d='M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027 v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
-.username-block a .icon-user:active{
+.username-block .icon-user:active{
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='18px' viewBox='0 0 20 18' enable-background='new 0 0 20 18' xml:space='preserve'%3E%3Cpath fill='%23c5c5c5' d='M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415 c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277 c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z'/%3E%3C/svg%3E%0A");
 }
-.username-block a .icon-logout:active{
+.username-block .icon-logout:active{
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='17px' viewBox='0 0 21 17' enable-background='new 0 0 21 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 '/%3E%3Cpath fill='%23c5c5c5' d='M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027 v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .username{
@@ -396,6 +399,7 @@ button{
   display: inline-block;
   padding-left: 47px;
   padding-top: 14px;
+  vertical-align: top;
 }
 .user-orders,
 .user-personal-area{
@@ -568,7 +572,7 @@ button{
   margin-top: 217px;
   z-index: 2;
 }
-.element-4 .slider-controls span{
+.slider-controls span{
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -577,6 +581,7 @@ button{
   border-radius: 5px;
   background-color: #ffffff;
   margin: 3px;
+  vertical-align: top;
 }
 .element-4 .active::after {
   content: "";
@@ -592,8 +597,9 @@ button{
 .element-4 .slider-item{
   width: 620px;
   height: 266px;
+  background-color: #674c35;
 }
-.element-4 .slider-item img{
+.slider-item img{
   position: absolute;
 }
 .element-4 h2{
@@ -777,6 +783,7 @@ label:active{
   height: 2px;
   background-color: #d7dcde;
   margin-top: 39px;
+  vertical-align: 0;
 }
 .ui-selected-range{
   background-color: #00ca74;
@@ -860,7 +867,7 @@ label:active{
   border-radius: 4px;
   margin: 20px 10px 16px 0;
 }
-.filter form legend{
+.filter legend{
   padding-bottom: 18px;
   line-height: 17px;
 }
@@ -880,7 +887,7 @@ label:active{
   margin: 0;
   padding-left: 30px;
 }
-.filter form fieldset label{
+.filter label{
   line-height: 15px;
   cursor: pointer;
 }
@@ -917,6 +924,9 @@ label:active{
   width: 27px;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='27px' height='23px' viewBox='0 0 27 23' enable-background='new 0 0 27 23' xml:space='preserve'%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='Layer_2'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 '/%3E%3Cpath fill='%23c5c5c5' d='M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
+.manufacturers .check-input:focus + .check-box{
+  outline: -webkit-focus-ring-color auto 1px;
+}
 .manufacturers .check:hover .check-box{
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='23px' height='23px' viewBox='0 0 23 23' enable-background='new 0 0 23 23' xml:space='preserve'%3E%3Cpath fill='%23b5b5b5' d='M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3 C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z'/%3E%3C/svg%3E%0A");
 }
@@ -946,7 +956,7 @@ label:active{
 .power-choose .radio:last-child{
   padding-bottom: 0;
 }
-.power-choose .radio .radio-input{
+.power-choose .radio-input{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -958,7 +968,7 @@ label:active{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.power-choose .radio .radio-box{
+.power-choose .radio-box{
   position: absolute;
   width: 25px;
   height: 25px;
@@ -974,6 +984,9 @@ label:active{
 }
 .power-choose .radio-input:checked:hover + .radio-box{
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='25px' height='25px' viewBox='0 0 25 25' enable-background='new 0 0 25 25' xml:space='preserve'%3E%3Cpath fill='%23b5b5b5' d='M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0 C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z'/%3E%3Ccircle fill='%23b5b5b5' cx='12.5' cy='12.5' r='4.5'/%3E%3C/svg%3E%0A");
+}
+.power-choose .radio-input:focus + .radio-box{
+  outline: -webkit-focus-ring-color auto 1px;
 }
 .section-header .section-header-btn{
   font-size: 14px;
@@ -1002,10 +1015,10 @@ label:active{
   justify-content: space-between;
   padding-right: 15px;
 }
-.catalog .sorting h4{
+.catalog h4{
   padding-right: 140px;
 }
-.main-catalog .catalog .main-catalog-list{
+.catalog .main-catalog-list{
   margin-left: 10px;
   padding: 0;
   display: flex;
@@ -1013,7 +1026,7 @@ label:active{
   flex-wrap: wrap;
   width: 700px;
 }
-.catalog .sorting button{
+.sorting button{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 13px;
@@ -1028,7 +1041,7 @@ label:active{
   margin: 0;
   outline: none;
 }
-.catalog .sorting .buttons-filter{
+.sorting .buttons-filter{
   width: 355px;
   display: flex;
   justify-content: space-between;
@@ -1037,24 +1050,25 @@ label:active{
 .up-down-filter{
   display: flex;
 }
-.catalog .sorting a{
+.sorting a{
   display: inline-block;
   padding-left: 21px;
+  vertical-align: middle;
 }
-.catalog .sorting a:hover svg polygon,
-.catalog .sorting a:hover svg polyline{
+.sorting a:hover polygon,
+.sorting a:hover polyline{
   fill: #000000;
 }
-.catalog .sorting a:focus svg polygon,
-.catalog .sorting a:focus svg polyline{
+.sorting a:focus polygon,
+.sorting a:focus polyline{
   fill: #ee3643;
 }
-.catalog .sorting button:hover{
+.sorting button:hover{
   color: #000000;
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
-.catalog .sorting button:focus{
+.sorting button:focus{
   color: #ee3643;
   opacity: 1;
   border-bottom: none;
@@ -1078,7 +1092,7 @@ label:active{
   justify-content: space-between;
   position: relative;
 }
-.catalog ul li span{
+.main-catalog-list span{
   padding: 0 10px;
 }
 .catalog li{
@@ -1138,6 +1152,7 @@ label:active{
   position: absolute;
   margin-left: -35px;
   margin-top: 1px;
+  vertical-align: middle;
 }
 .btns-catalog-element .buy-btn:hover{
   background-color: #5fbb2d;
@@ -1165,8 +1180,8 @@ label:active{
 .catalog li:hover .btns-catalog-element{
   display: block;
 }
-.catalog li h3,
-.catalog li p{
+.catalog h3,
+.catalog p{
   margin: 0;
   max-width: 220px;
 }
@@ -1177,6 +1192,7 @@ label:active{
   display: inline-block;
   position: relative;
   max-width: 217px;
+  vertical-align: middle;
 }
 .catalog del{
   font-family: "PT Sans", Arial, sans-serif;
@@ -1227,8 +1243,9 @@ label:active{
   align-items: center;
   justify-content: center;
 }
-.popular-manufaturers li a img{
+.popular-manufaturers img{
   display: inline-block;
+  vertical-align: middle;
 }
 .popular-manufaturers li:hover{
   box-shadow: 0px 10px 25px 0px rgba(41,51,73,0.5);
@@ -1261,6 +1278,7 @@ label:active{
   border: 1.0px solid #e5e5e5;
   border-radius: 4px;
   display: inline-block;
+  vertical-align: middle;
 }
 .btn-show{
   width: 140px;
@@ -1284,7 +1302,7 @@ label:active{
 .btn-show:active{
   border: 1.0px solid #ee3643;
 }
-.pages .active a{
+.active a{
 color: #ffffff;
 background-color: #ee3643;
 }
@@ -1302,11 +1320,11 @@ background-color: #ee3643;
   margin-top: 0;
   margin-bottom: 0;
 }
-.services ul li button,
-.services ul li img{
+.services button,
+.services img{
   margin: 0;
 }
-.services ul li h3{
+.services h3{
   margin-top: 0;
   margin-bottom: 22px;
 }
@@ -1445,14 +1463,15 @@ background-color: #ee3643;
   list-style: none;
   position: relative;
 }
-.about-company ul li{
+.about-company li{
   padding-left: 36px;
   position: relative;
 }
-.about-company ul li::before{
+.about-company li::before{
   content: "";
   width: 25px;
   height: 2px;
+  background-color: red;
   background-image: url("../img/list-style.png");
   position: absolute;
   top: 50%;
@@ -1470,6 +1489,7 @@ background-color: #ee3643;
   border-radius: 5px;
   text-align: center;
   margin-top: 22px;
+  vertical-align: middle;
 }
 .about-company a:hover,
 .contacts button:hover,
@@ -1539,6 +1559,7 @@ background-color: #ee3643;
   text-align: center;
   display: inline-block;
   border-bottom: 5px solid #b52933;
+  vertical-align: middle;
 }
 .logo-footer a{
   line-height: 68px;
@@ -1554,11 +1575,11 @@ background-color: #ee3643;
   margin: 0;
   margin-top: 42px;
 }
-.site-navigation ul li{
+.site-navigation li{
   display: flex;
   padding-left: 60px;
 }
-.site-navigation ul li a{
+.site-navigation a{
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -1581,7 +1602,7 @@ background-color: #ee3643;
   padding: 0;
   margin: 0;
 }
-.catalog-navigation ul li{
+.catalog-navigation li{
   display: flex;
   padding-left: 60px;
 }
@@ -1603,7 +1624,7 @@ background-color: #ee3643;
 .social-media{
   display: flex;
 }
-.social-media a div{
+.social-media div{
   width: 42px;
   height: 42px;
   background-color: #212a3a;
@@ -1613,9 +1634,9 @@ background-color: #ee3643;
   align-items: center;
   margin-left: 3px;
 }
-.social-media a div:hover,
-.social-media a div:active,
-.social-media a div:focus{
+.social-media div:hover,
+.social-media div:active,
+.social-media div:focus{
   background-color: #ee3643;
 }
 .feedback-developer{
@@ -1635,19 +1656,19 @@ background-color: #ee3643;
   font: inherit;
   color: #ffd180;
 }
-.site-navigation li a:hover{
+.site-navigation a:hover{
   text-decoration: underline;
   text-decoration-color: #f1f5f7;
 }
-.catalog-navigation li a:hover{
+.catalog-navigation a:hover{
   text-decoration: underline;
   text-decoration-color: #ffd180;
 }
-.site-navigation li a:active{
+.site-navigation a:active{
   color: #a4abb4;
   text-decoration: none;
 }
-.catalog-navigation li a:active{
+.catalog-navigation a:active{
   color: #a6906e;
   text-decoration: none;
 }
@@ -1844,6 +1865,7 @@ background-color: #ee3643;
   display: inline-block;
   margin-right: 10px;
   margin-top: 37px;
+  vertical-align: top;
 }
 .added-to-cart-footer button{
   width: 220px;
@@ -1918,7 +1940,7 @@ background-color: #ee3643;
   display: block;
   animation: bounce-cart 0.6s;
 }
-.modal-error {
+.modal-error{
   animation: shake 0.6s;
 }
 .visually-hidden{
