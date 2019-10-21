@@ -315,34 +315,38 @@ button{
   margin-top: -31px;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='17px' viewBox='0 0 20 17' enable-background='new 0 0 20 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 '/%3E%3C/g%3E%3Cpath fill='%23c5c5c5' d='M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z'/%3E%3C/svg%3E%0A");
 }
-.user-panel button[name="sign-in"]:hover ~ .icon-login,
+.user-panel .sign-in-btn:hover ~ .icon-login,
 .icon-login:hover{
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='17px' viewBox='0 0 20 17' enable-background='new 0 0 20 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%2332425C' points='14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 '/%3E%3C/g%3E%3Cpath fill='%2332425C' d='M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z'/%3E%3C/svg%3E%0A");
 }
-.user-panel button[name="sign-in"]:active ~ .icon-login,
+.user-panel .sign-in-btn:active ~ .icon-login,
 .icon-login:active{
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='17px' viewBox='0 0 20 17' enable-background='new 0 0 20 17' xml:space='preserve'%3E%3Cg%3E%3Cpolygon fill='%23c5c5c5' points='14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 '/%3E%3C/g%3E%3Cpath fill='%23c5c5c5' d='M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z'/%3E%3C/svg%3E%0A");
 }
-.user-panel button{
+.user-panel .sign-in-btn,
+.user-panel .sign-un-btn{
   font-size: 21px;
-  line-height: 21px;
+  line-height: 45px;
   background-color: #ffffff;
-  width: 121px;
+  width: 46px;
   height: 45px;
   border: none;
+  display: block;
+  color: #000000;
 }
-.user-panel button[name="sign-in"]{
+.user-panel .sign-in-btn{
   padding: 0;
   padding-left: 48px;
   padding-right: 27px;
 }
-.user-panel button[name="sign-up"]{
+.user-panel .sign-un-btn{
   width: 150px;
+  text-align: center;
 }
-.user-panel button:hover{
+.user-panel a:hover{
   color: #ee3643;
 }
-.user-panel button:active{
+.user-panel a:active{
   color: #cacaca;
 }
 .user{
@@ -686,6 +690,7 @@ h1{
   display: block;
   text-align: left;
   padding-left: 30px;
+  font-weight: 400;
 }
 h2{
   font-size: 30px;
@@ -703,6 +708,7 @@ h4{
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 fieldset{
   border: none;
@@ -886,6 +892,7 @@ label:active{
   color: #32425c;
   margin: 0;
   padding-left: 30px;
+  font-weight: 400;
 }
 .filter label{
   line-height: 15px;
@@ -1026,7 +1033,7 @@ label:active{
   flex-wrap: wrap;
   width: 700px;
 }
-.sorting button{
+.sorting .sorting-link{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 13px;
@@ -1063,12 +1070,12 @@ label:active{
 .sorting a:focus polyline{
   fill: #ee3643;
 }
-.sorting button:hover{
+.sorting .sorting-link:hover{
   color: #000000;
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
-.sorting button:focus{
+.sorting .sorting-link:focus{
   color: #ee3643;
   opacity: 1;
   border-bottom: none;
@@ -1204,7 +1211,9 @@ label:active{
   text-align: center;
   display: block;
   padding: 0 10px;
-
+}
+.catalog ins{
+  text-decoration: none;
 }
 .catalog .current-price{
   font-family: "PT Sans", Arial, sans-serif;
@@ -1416,10 +1425,6 @@ background-color: #ee3643;
 }
 .services .guarantee{
   font-family: "GillSans", "Cuprum", Arial, sans-serif;
-  font-style: italic;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 600;
 }
 .services p{
   font-family: "PT Sans", Arial, sans-serif;
@@ -1428,6 +1433,7 @@ background-color: #ee3643;
   color: #000000;
   font-weight: 400;
   margin: 0;
+  max-width: 400px;
 }
 .info{
   display: flex;
@@ -1452,6 +1458,7 @@ background-color: #ee3643;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
+  max-width: 520px;
 }
 .about-company ul{
   display: flex;
@@ -1530,6 +1537,9 @@ background-color: #ee3643;
 }
 .post-scriptum{
   padding: 67px 0;
+}
+.post-scriptum h2{
+  font-weight: 400;
 }
 .post-scriptum p{
   font-family: "PT Sans", Arial, sans-serif;
