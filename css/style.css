@@ -692,7 +692,7 @@ a{
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  top: 27px;
+  top: 24px;
   left: 24px;
 }
 .element-4 p{
@@ -701,7 +701,7 @@ a{
   color: #ffffff;
   font-weight: 400;
   position: relative;
-  top: 30px;
+  top: 24px;
   left: 25px;
 }
 .left-btn-slider,
@@ -1195,37 +1195,40 @@ a{
   height: 160px;
   text-align: center;
 }
-.btns-catalog-element button{
+.btns-catalog-element .buy-btn,
+.btns-catalog-element .to-fav-btn{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   font-weight: 400;
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
   text-align: center;
   vertical-align: middle;
+  display: block;
+  margin-left: 41px;
 }
 .btns-catalog-element .buy-btn{
   color: #ffffff;
   width: 135px;
-  height: 38px;
+  height: 35px;
   background-color: #63a63e;
   border-bottom: 3px solid #367315;
-  padding: 10px 45px 14px 49px;
-  margin-top: 32px;
-  margin-bottom: 7px;
+  margin-top: 33px;
+  margin-bottom: 9px;
   font-family: "Cuprum", Arial, sans-serif;
   cursor: pointer;
 }
 .btns-catalog-element .to-fav-btn{
   color: #32425c;
-  width: 135px;
-  height: 38px;
+  width: 129px;
+  height: 32px;
   background-color: #ffffff;
   border: 3.0px solid #63a63e;
   font-family: "Cuprum", Arial, sans-serif;
   cursor: pointer;
+  line-height: 32px;
 }
 .btns-catalog-element .buy-btn::before{
   content: "";
@@ -1235,8 +1238,8 @@ a{
   opacity: 0.3;
   display: inline-block;
   position: absolute;
-  margin-left: -35px;
-  margin-top: 1px;
+  margin-left: -33px;
+  margin-top: 11px;
   vertical-align: middle;
 }
 .btns-catalog-element .buy-btn:hover{
@@ -1244,7 +1247,7 @@ a{
 }
 .btns-catalog-element .buy-btn:active{
   background-color: #518534;
-  border: none;
+  border-color: #518534;
 }
 .btns-catalog-element .to-fav-btn:hover{
   border-color: #32425c;
@@ -1270,7 +1273,7 @@ a{
   margin: 0;
   max-width: 220px;
 }
-.catalog a:not(.section-header-btn){
+.catalog a:not(.section-header-btn):not(.buy-btn):not(.to-fav-btn){
   color: #000000;
   line-height: 20px;
   text-align: center;
@@ -1609,7 +1612,7 @@ background-color: #ee3643;
   vertical-align: middle;
 }
 .about-company a:hover,
-.contacts button:hover,
+.contacts .contact-us-btn:hover,
 .catalog-btn:hover,
 .section-header-btn:hover,
 .write-us-btn:hover,
@@ -1617,7 +1620,7 @@ background-color: #ee3643;
   background-color: #ca2c37;
 }
 .about-company a:active,
-.contacts button:active,
+.contacts .contact-us-btn:active,
 .catalog-btn:active,
 .section-header-btn:active,
 .write-us-btn:active,
@@ -1630,19 +1633,21 @@ background-color: #ee3643;
   line-height: 24px;
   margin: 0;
 }
-.contacts button{
+.contacts .contact-us-btn{
   background-color: #ee3643;
   width: 300px;
   height: 38px;
   border: none;
   border-radius: 5px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   text-transform: uppercase;
   color: #ffffff;
   margin-top: auto;
   font-family: "Cuprum", Arial, sans-serif;
   cursor: pointer;
+  display: block;
+  text-align: center;
 }
 .contacts img{
   cursor: pointer;

@@ -1,4 +1,4 @@
-var link = document.querySelector(".contacts button");
+var link = document.querySelector(".contact-us-btn");
 var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".popup-close-btn");
 
