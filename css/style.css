@@ -524,7 +524,8 @@ a {
   background-image: url("../img/icon-user.svg");
   position: absolute;
 }
-.logout-link{
+
+.logout-link {
   position: absolute;
   right: 0px;
   height: 45px;
@@ -548,7 +549,7 @@ a {
 }
 
 .username-block .icon-logout:hover,
-.logout-link:hover > .icon-logout {
+.logout-link:hover>.icon-logout {
   background-image: url("../img/icon-logout-hover.svg");
 }
 
@@ -557,7 +558,7 @@ a {
 }
 
 .username-block .icon-logout:active,
-.logout-link:active > .icon-logout{
+.logout-link:active>.icon-logout {
   background-image: url("../img/icon-logout.svg");
 }
 
@@ -1388,7 +1389,8 @@ a {
   position: relative;
   margin-right: 20px;
 }
-.without-old-price .current-price{
+
+.without-old-price .current-price {
   margin-top: 30px;
 }
 
@@ -1560,7 +1562,8 @@ a {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.popular-manufaturers li:nth-child(4n){
+
+.popular-manufaturers li:nth-child(4n) {
   margin-right: 0;
 }
 
